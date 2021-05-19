@@ -1,0 +1,2777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0759319BDFA9B1113725E141 /* Pods_GoldTreasureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A30CA97C972643A3324B1A /* Pods_GoldTreasureTests.framework */; };
+		0E057C531F0C89F0001C2F8F /* GTRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E057C521F0C89F0001C2F8F /* GTRefreshView.swift */; };
+		0E11483A1F027A8000B78849 /* GTApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1148391F027A8000B78849 /* GTApi.m */; };
+		0E14641D1F0CACC80010AF99 /* GTRootTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E14641C1F0CACC80010AF99 /* GTRootTabbarVC.swift */; };
+		0E14641F1F0CAF920010AF99 /* GTRootNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E14641E1F0CAF920010AF99 /* GTRootNavVC.swift */; };
+		0E155E211F23511F00601A2D /* GTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E155E1D1F23511F00601A2D /* GTColor.m */; };
+		0E155E221F23511F00601A2D /* GTUIDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E155E201F23511F00601A2D /* GTUIDefine.swift */; };
+		0E155E241F23513200601A2D /* GTFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E155E231F23513200601A2D /* GTFont.m */; };
+		0E1FAA161F06269700D6AB40 /* Data+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1FAA151F06269700D6AB40 /* Data+GT.swift */; };
+		0E37EFB11F029350000834C6 /* GTNetError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E37EFB01F029350000834C6 /* GTNetError.m */; };
+		0E38CFC61F074C580072D323 /* UpYunBlockUpLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFA91F074C580072D323 /* UpYunBlockUpLoader.m */; };
+		0E38CFC71F074C580072D323 /* UpYunFormUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFAB1F074C580072D323 /* UpYunFormUploader.m */; };
+		0E38CFC81F074C580072D323 /* UpApiUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFAF1F074C580072D323 /* UpApiUtils.m */; };
+		0E38CFC91F074C580072D323 /* UpSimpleHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFB11F074C580072D323 /* UpSimpleHttpClient.m */; };
+		0E38CFCA1F074C580072D323 /* UPHTTPBodyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFB51F074C580072D323 /* UPHTTPBodyPart.m */; };
+		0E38CFCB1F074C580072D323 /* UPHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFB71F074C580072D323 /* UPHTTPClient.m */; };
+		0E38CFCC1F074C580072D323 /* UPMultipartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFB91F074C580072D323 /* UPMultipartBody.m */; };
+		0E38CFCD1F074C580072D323 /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFBC1F074C580072D323 /* NSData+MD5Digest.m */; };
+		0E38CFCE1F074C580072D323 /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFBE1F074C580072D323 /* NSString+NSHash.m */; };
+		0E38CFCF1F074C580072D323 /* UPMutUploaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFC11F074C580072D323 /* UPMutUploaderManager.m */; };
+		0E38CFD01F074C580072D323 /* UpYun.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFC31F074C580072D323 /* UpYun.m */; };
+		0E38CFD11F074C580072D323 /* UPYUNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38CFC51F074C580072D323 /* UPYUNConfig.m */; };
+		0E3F24461F14809E00F7D17B /* libLLPaySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3F24411F14809E00F7D17B /* libLLPaySDK.a */; };
+		0E3F24481F14809E00F7D17B /* walletResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E3F24441F14809E00F7D17B /* walletResources.bundle */; };
+		0E3F244B1F14B81500F7D17B /* GTCommonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F244A1F14B81500F7D17B /* GTCommonService.m */; };
+		0E3F24521F14F6D300F7D17B /* GTRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F24511F14F6D300F7D17B /* GTRouter.swift */; };
+		0E3F24551F14F96E00F7D17B /* GTAdapt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F24541F14F96E00F7D17B /* GTAdapt.m */; };
+		0E4102021F343B6100EBCAA0 /* GTDefaultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4102011F343B6100EBCAA0 /* GTDefaultController.swift */; };
+		0E451CA61F1CE9E500B026BA /* UIBarButtonItem+GT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E451CA51F1CE9E500B026BA /* UIBarButtonItem+GT.m */; };
+		0E4632891F3AC23E00625E2A /* GTTransNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4632881F3AC23E00625E2A /* GTTransNavbar.swift */; };
+		0E4F9BCE1F31D5CF00998212 /* UIButton+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F9BCD1F31D5CF00998212 /* UIButton+GT.swift */; };
+		0E5916411F18E92F00FA292C /* GTWKWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5916401F18E92F00FA292C /* GTWKWebVC.swift */; };
+		0E61F1201F23540A00D00C81 /* GTCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E61F11F1F23540A00D00C81 /* GTCommonDefine.m */; };
+		0E61F1241F25A4A100D00C81 /* GTStrDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E61F1231F25A4A100D00C81 /* GTStrDefine.swift */; };
+		0E61F12C1F271FC800D00C81 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E61F12B1F271FC800D00C81 /* MBProgressHUD.m */; };
+		0E6F4F371F1067A5002E50D2 /* GTRealmService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F4F361F1067A5002E50D2 /* GTRealmService.m */; };
+		0E6F4F3A1F10CEE3002E50D2 /* GTVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6F4F391F10CEE3002E50D2 /* GTVerification.m */; };
+		0E73E7CC1F5665AF00EE6A76 /* UILable+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E73E7CB1F5665AF00EE6A76 /* UILable+GT.swift */; };
+		0E73F8271F0CD98A00EAEC9F /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E73F8261F0CD98A00EAEC9F /* UIImage+Extension.m */; };
+		0E73F82A1F0CDBFF00EAEC9F /* NSObject+GT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E73F8291F0CDBFF00EAEC9F /* NSObject+GT.m */; };
+		0E73F82D1F0CFF6600EAEC9F /* NSNumber+GT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E73F82C1F0CFF6600EAEC9F /* NSNumber+GT.m */; };
+		0E73F8301F0D16C200EAEC9F /* GTHomePageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E73F82F1F0D16C200EAEC9F /* GTHomePageController.m */; };
+		0E83F83DF8240D9B260FC97B /* Pods_GoldTreasure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A95C40FD3981BBCED9FA19A /* Pods_GoldTreasure.framework */; };
+		0E8695A61F09E9DF0064A7F5 /* libUubeeSuperReal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8695A51F09E9DF0064A7F5 /* libUubeeSuperReal.a */; };
+		0E8695AA1F0A2D500064A7F5 /* GTLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8695A91F0A2D500064A7F5 /* GTLoginService.m */; };
+		0E8695B01F0B39030064A7F5 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8695AF1F0B39030064A7F5 /* NSDictionary+Extension.m */; };
+		0E8B78751F0B447B007CE34B /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B78741F0B447B007CE34B /* NSString+Additions.m */; };
+		0E9D1D8B1F17737600A68756 /* GTGuiderImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9D1D8A1F17737600A68756 /* GTGuiderImgVC.swift */; };
+		0E9D1D8F1F17979F00A68756 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E9D1D8D1F17979F00A68756 /* AlipaySDK.bundle */; };
+		0E9D1D901F17979F00A68756 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9D1D8E1F17979F00A68756 /* AlipaySDK.framework */; };
+		0E9D1D921F1797E400A68756 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9D1D911F1797E400A68756 /* QuartzCore.framework */; };
+		0E9D1D941F1797EF00A68756 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9D1D931F1797EF00A68756 /* CoreText.framework */; };
+		0E9D1D961F17980000A68756 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9D1D951F17980000A68756 /* CFNetwork.framework */; };
+		0E9D1D981F1798B600A68756 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9D1D971F1798B600A68756 /* CoreMotion.framework */; };
+		0EAA25B71F0BB34600FA0ED9 /* GTHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAA25B61F0BB34600FA0ED9 /* GTHUD.swift */; };
+		0EAB3C921F3C79AD0091B76E /* UINavBar+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB3C911F3C79AD0091B76E /* UINavBar+GT.swift */; };
+		0EAB3C951F3D3A310091B76E /* UIViewController+GT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB3C941F3D3A310091B76E /* UIViewController+GT.m */; };
+		0EB539821F15F8EF004D99EC /* GTNotiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB539811F15F8EF004D99EC /* GTNotiView.swift */; };
+		0EB53FE91F035B74001D1571 /* GTTEST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB53FE81F035B74001D1571 /* GTTEST.swift */; };
+		0EB53FEC1F037B8D001D1571 /* GTApiCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB53FEB1F037B8D001D1571 /* GTApiCode.swift */; };
+		0EB53FEF1F039156001D1571 /* GTUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB53FEE1F039156001D1571 /* GTUser.swift */; };
+		0EB53FF71F03969C001D1571 /* GTClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB53FF61F03969C001D1571 /* GTClient.swift */; };
+		0EB540011F03AB55001D1571 /* Int+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB540001F03AB55001D1571 /* Int+GT.swift */; };
+		0EB540051F04DD8B001D1571 /* String+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB540041F04DD8B001D1571 /* String+GT.swift */; };
+		0EB540071F04DD90001D1571 /* UIColor+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB540061F04DD90001D1571 /* UIColor+GT.swift */; };
+		0EB540091F0521B1001D1571 /* GTSecUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB540081F0521B1001D1571 /* GTSecUtils.swift */; };
+		0EBF6BDD1F205F3100483292 /* GTUpdateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF6BDC1F205F3100483292 /* GTUpdateView.xib */; };
+		0EBF6BDF1F20649600483292 /* GTUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF6BDE1F20649600483292 /* GTUpdateView.swift */; };
+		0EBFEB711F15ECAA00CEBE78 /* GTPopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBFEB701F15ECAA00CEBE78 /* GTPopController.swift */; };
+		0EC9C8D11F28944A00D92201 /* GTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9C8D01F28944A00D92201 /* GTSize.m */; };
+		0EC9C8D31F28B20B00D92201 /* NSObject+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC9C8D21F28B20B00D92201 /* NSObject+GT.swift */; };
+		0ED6C6021F0CD302001E36B8 /* UIImage+GT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED6C6011F0CD302001E36B8 /* UIImage+GT.swift */; };
+		0ED837F51F0738A100119191 /* GTRootUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ED837F41F0738A100119191 /* GTRootUINavigationController.m */; };
+		0EE42B061F012386001D7D88 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE42B051F012386001D7D88 /* BaseModel.m */; };
+		0EE42B101F0124DA001D7D88 /* BaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE42B0F1F0124DA001D7D88 /* BaseTabBarViewController.m */; };
+		0EE42B141F012617001D7D88 /* ReturnBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE42B131F012617001D7D88 /* ReturnBack.m */; };
+		0EE42B171F012620001D7D88 /* RightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE42B161F012620001D7D88 /* RightButton.m */; };
+		0EE42B241F012746001D7D88 /* TimeTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE42B211F012746001D7D88 /* TimeTools.m */; };
+		0EE42B2A1F012771001D7D88 /* NSString+TelNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE42B271F012771001D7D88 /* NSString+TelNumber.m */; };
+		0EE42B2B1F012771001D7D88 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE42B291F012771001D7D88 /* UIView+Extension.m */; };
+		0EEA10671F08C548001F56F6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA10661F08C548001F56F6 /* libc++.tbd */; };
+		0EEA10691F08C564001F56F6 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA10681F08C564001F56F6 /* libicucore.tbd */; };
+		0EEA106B1F08C574001F56F6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA106A1F08C574001F56F6 /* CoreMedia.framework */; };
+		0EEA106D1F08C57E001F56F6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA106C1F08C57E001F56F6 /* ImageIO.framework */; };
+		0EEA106F1F08C587001F56F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA106E1F08C587001F56F6 /* SystemConfiguration.framework */; };
+		0EEA10711F08C597001F56F6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA10701F08C597001F56F6 /* CoreTelephony.framework */; };
+		0EEA10731F08C59E001F56F6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA10721F08C59E001F56F6 /* AudioToolbox.framework */; };
+		0EEA10751F08C5A6001F56F6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA10741F08C5A6001F56F6 /* AVFoundation.framework */; };
+		0EEA10771F08C5B2001F56F6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEA10761F08C5B2001F56F6 /* MobileCoreServices.framework */; };
+		0EEA10A21F08D0C4001F56F6 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC2D1F05EBEC00CCAFFE /* UILabel+Extension.m */; };
+		0EEA10B91F08D214001F56F6 /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA10B81F08D214001F56F6 /* TViewController.swift */; };
+		0EEA10BD1F08D253001F56F6 /* TViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EEA10BB1F08D253001F56F6 /* TViewController.xib */; };
+		0EEA10CF1F08E1F9001F56F6 /* TAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEA10CD1F08E1F9001F56F6 /* TAuthViewController.swift */; };
+		0EEA10D01F08E1F9001F56F6 /* TAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EEA10CE1F08E1F9001F56F6 /* TAuthViewController.xib */; };
+		0EEC24CA1F15BE2700FA529D /* GTCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEC24C91F15BE2700FA529D /* GTCheck.swift */; };
+		0EF3C0701F161A7600F31D85 /* GTNotiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3C06F1F161A7600F31D85 /* GTNotiView.xib */; };
+		0EF3C0761F16217D00F31D85 /* GTNotiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3C0751F16217D00F31D85 /* GTNotiController.swift */; };
+		0EF3C0801F164E4400F31D85 /* UIView+GKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3C07A1F164E4400F31D85 /* UIView+GKExtension.m */; };
+		0EF3C0811F164E4400F31D85 /* GKCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3C07C1F164E4400F31D85 /* GKCover.m */; };
+		0EF3C0821F164E4400F31D85 /* transparent_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EF3C07F1F164E4400F31D85 /* transparent_bg.png */; };
+		0EFC86F81F0E390B00EA278E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFC86F71F0E390B00EA278E /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		0EFC86FD1F0E39B900EA278E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFC86F91F0E39B900EA278E /* CoreLocation.framework */; };
+		0EFC86FE1F0E39B900EA278E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFC86FA1F0E39B900EA278E /* libsqlite3.tbd */; };
+		0EFC86FF1F0E39B900EA278E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFC86FB1F0E39B900EA278E /* libz.tbd */; };
+		0EFC87001F0E39B900EA278E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFC86FC1F0E39B900EA278E /* Security.framework */; };
+		0EFC87081F0F62F600EA278E /* GTLoginRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC87071F0F62F600EA278E /* GTLoginRoot.swift */; };
+		0EFC870A1F0F78D200EA278E /* GTNoti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC87091F0F78D200EA278E /* GTNoti.swift */; };
+		0EFC870C1F0F85B000EA278E /* GTDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC870B1F0F85B000EA278E /* GTDB.swift */; };
+		0EFC870F1F0F8C2100EA278E /* GTDBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFC870E1F0F8C2100EA278E /* GTDBUserModel.m */; };
+		3E82939867FDD8FDE8C15E4D /* Pods_GoldTreasureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95713BC0294EB52DF72FAE2 /* Pods_GoldTreasureUITests.framework */; };
+		7F0C61E31F01F1840049B8E1 /* HomePageHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61E21F01F1840049B8E1 /* HomePageHeadView.m */; };
+		7F0C61E71F01F8CC0049B8E1 /* OrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61E61F01F8CC0049B8E1 /* OrderModel.m */; };
+		7F0C61EA1F022C4E0049B8E1 /* UIButton+GTImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61E91F022C4E0049B8E1 /* UIButton+GTImageTitleSpacing.m */; };
+		7F0C61ED1F0252D50049B8E1 /* GTFlexSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61EC1F0252D50049B8E1 /* GTFlexSliderCell.m */; };
+		7F0C61FE1F0253670049B8E1 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61F11F0253670049B8E1 /* TAAbstractDotView.m */; };
+		7F0C61FF1F0253670049B8E1 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61F31F0253670049B8E1 /* TAAnimatedDotView.m */; };
+		7F0C62001F0253670049B8E1 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61F51F0253670049B8E1 /* TADotView.m */; };
+		7F0C62031F0253670049B8E1 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61FB1F0253670049B8E1 /* SDCycleScrollView.m */; };
+		7F0C62041F0253670049B8E1 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61FD1F0253670049B8E1 /* UIView+SDExtension.m */; };
+		7F53ABC01F0257AB00710468 /* GTNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F53ABBF1F0257AB00710468 /* GTNormalCell.m */; };
+		7F53ABC71F03560200710468 /* GTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F53ABC61F03560200710468 /* GTBaseViewController.m */; };
+		7F53ABCA1F0356D700710468 /* GTNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F53ABC91F0356D700710468 /* GTNotificationController.m */; };
+		7F53ABCE1F037AA100710468 /* GTLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F53ABCD1F037AA100710468 /* GTLoginController.m */; };
+		7F53ABD21F03823000710468 /* GTLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F53ABD11F03823000710468 /* GTLoginView.m */; };
+		7F55FF501F1DD465002E90A6 /* GTValuePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F55FF4F1F1DD465002E90A6 /* GTValuePickerView.m */; };
+		7FBCDAA61EFCC17B001FC63B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBCDAA51EFCC17B001FC63B /* main.m */; };
+		7FBCDAA91EFCC17B001FC63B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBCDAA81EFCC17B001FC63B /* AppDelegate.m */; };
+		7FBCDAB41EFCC17B001FC63B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FBCDAB21EFCC17B001FC63B /* LaunchScreen.storyboard */; };
+		7FBCDABF1EFCC17B001FC63B /* GoldTreasureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBCDABE1EFCC17B001FC63B /* GoldTreasureTests.m */; };
+		7FBCDACA1EFCC17B001FC63B /* GoldTreasureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBCDAC91EFCC17B001FC63B /* GoldTreasureUITests.m */; };
+		7FD97F061F1755D700880CDC /* ScrollPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD97F051F1755D700880CDC /* ScrollPickerView.m */; };
+		7FE568D11F1F4FF5006F03F6 /* GTUserAgreementController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE568D01F1F4FF5006F03F6 /* GTUserAgreementController.m */; };
+		7FFEBF111F04965100C5ED51 /* GTRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF101F04965100C5ED51 /* GTRegisterController.m */; };
+		7FFEBF1A1F04DA6800C5ED51 /* GTForgetPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF191F04DA6800C5ED51 /* GTForgetPasswordController.m */; };
+		7FFEBF1D1F04DCDB00C5ED51 /* GTForgetPasswordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF1C1F04DCDB00C5ED51 /* GTForgetPasswordCell.m */; };
+		7FFEBF211F074A5C00C5ED51 /* GTShowMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF201F074A5C00C5ED51 /* GTShowMessage.m */; };
+		7FFEBF261F0770EC00C5ED51 /* GTContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF251F0770EC00C5ED51 /* GTContactsController.m */; };
+		7FFEBF2A1F0773E700C5ED51 /* GTContactsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF291F0773E700C5ED51 /* GTContactsCell.m */; };
+		7FFEBF6F1F07976000C5ED51 /* GTContactsTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF6E1F07976000C5ED51 /* GTContactsTitleCell.m */; };
+		7FFEBF721F09E55100C5ED51 /* GTAmountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF711F09E55100C5ED51 /* GTAmountController.m */; };
+		7FFEBF841F09F1A000C5ED51 /* libUubeeSuperReal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFEBF741F09F1A000C5ED51 /* libUubeeSuperReal.a */; };
+		7FFEBF861F09F1A000C5ED51 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7FFEBF761F09F1A000C5ED51 /* Resource.bundle */; };
+		7FFEBF871F09F1A000C5ED51 /* libMoxieSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFEBF7E1F09F1A000C5ED51 /* libMoxieSDK.a */; };
+		7FFEBF881F09F1A000C5ED51 /* mx_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFEBF801F09F1A000C5ED51 /* mx_back@2x.png */; };
+		7FFEBF891F09F1A000C5ED51 /* mx_finish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFEBF811F09F1A000C5ED51 /* mx_finish@2x.png */; };
+		7FFEBF8A1F09F1A000C5ED51 /* mx_loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFEBF821F09F1A000C5ED51 /* mx_loading@2x.png */; };
+		7FFEBF8B1F09F1A000C5ED51 /* mx_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FFEBF831F09F1A000C5ED51 /* mx_refresh@2x.png */; };
+		7FFEBF8E1F0A206800C5ED51 /* GTSelectAmountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF8D1F0A206800C5ED51 /* GTSelectAmountCell.m */; };
+		7FFEBF911F0A2A0000C5ED51 /* GTAmountNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF901F0A2A0000C5ED51 /* GTAmountNormalCell.m */; };
+		7FFEBF941F0B231900C5ED51 /* GTTripartiteContractController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF931F0B231900C5ED51 /* GTTripartiteContractController.m */; };
+		7FFEBF971F0BC02400C5ED51 /* GTSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF961F0BC02400C5ED51 /* GTSignatureView.m */; };
+		7FFEBF9A1F0C879500C5ED51 /* GTShowSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF991F0C879500C5ED51 /* GTShowSignature.m */; };
+		7FFEBF9D1F0CD51100C5ED51 /* GTSubmittedSuccessfullyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBF9C1F0CD51100C5ED51 /* GTSubmittedSuccessfullyController.m */; };
+		7FFEBFA11F0E071100C5ED51 /* GTNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBFA01F0E071100C5ED51 /* GTNotificationCell.m */; };
+		7FFEBFA51F0E13A800C5ED51 /* GTNotificationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBFA41F0E13A800C5ED51 /* GTNotificationModel.m */; };
+		7FFEBFA81F0E5E8800C5ED51 /* GTNotificationNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEBFA71F0E5E8800C5ED51 /* GTNotificationNormalCell.m */; };
+		BB0FC9C01F17072400E5DD98 /* PaybackEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0FC9BF1F17072400E5DD98 /* PaybackEndViewController.m */; };
+		BB328E9C1F0349220021750A /* GTNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA785671F0260280067F4BA /* GTNet.swift */; };
+		BB328E9D1F03492F0021750A /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0C61F91F0253670049B8E1 /* SDCollectionViewCell.m */; };
+		BB328E9E1F03494A0021750A /* GTResModelCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA785691F0262B30067F4BA /* GTResModelCommon.swift */; };
+		BB328E9F1F03494A0021750A /* GTReqModelCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA7856B1F02639A0067F4BA /* GTReqModelCommon.swift */; };
+		BB328EA31F0357650021750A /* PaybackHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB328EA21F0357650021750A /* PaybackHeaderView.m */; };
+		BB72024B1F1500CB00BD2DA7 /* LLOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = BB72024A1F1500CB00BD2DA7 /* LLOrder.m */; };
+		BB8A920C1F1F52B300494448 /* NSDate+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8A920B1F1F52B300494448 /* NSDate+Custom.m */; };
+		BBAF95821F07A9640053B08A /* PersistLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAF95811F07A9640053B08A /* PersistLoanViewController.m */; };
+		BBAF95851F07A9850053B08A /* NowPaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAF95841F07A9850053B08A /* NowPaybackViewController.m */; };
+		BBAF95891F09D5CF0053B08A /* NowPaybackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAF95881F09D5CF0053B08A /* NowPaybackCell.m */; };
+		BBAF958C1F0A30050053B08A /* PaybackWayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAF958B1F0A30050053B08A /* PaybackWayCell.m */; };
+		BBAF958F1F0A45F60053B08A /* GTTradeService.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAF958E1F0A45F60053B08A /* GTTradeService.m */; };
+		BBB13C931F05F8730066393F /* LoanDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB13C921F05F8730066393F /* LoanDetailViewController.m */; };
+		BBB13C981F05FDE60066393F /* LoanDeatialHeadrView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB13C971F05FDE60066393F /* LoanDeatialHeadrView.m */; };
+		BBB13C9E1F0671B60066393F /* LateFeeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB13C9D1F0671B60066393F /* LateFeeCell.m */; };
+		BBB13CA11F0671F70066393F /* LateFeeHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB13CA01F0671F70066393F /* LateFeeHeaderCell.m */; };
+		BBB13CA91F07495A0066393F /* feeSummaryFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB13CA81F07495A0066393F /* feeSummaryFooterView.m */; };
+		BBD3814F1F0292350098603F /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD3814E1F0292350098603F /* TAPageControl.m */; };
+		BBD381531F0293920098603F /* PaybackView.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD381521F0293920098603F /* PaybackView.m */; };
+		BBD381571F0293A10098603F /* GTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD381561F0293A10098603F /* GTTableViewCell.m */; };
+		BBD3815B1F0294860098603F /* GTLoanOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD3815A1F0294860098603F /* GTLoanOrderViewController.m */; };
+		BBD3815F1F0294940098603F /* PaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD3815E1F0294940098603F /* PaybackViewController.m */; };
+		BBDC65F21F0E36B600AB1B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDC65F11F0E36B600AB1B0A /* Assets.xcassets */; };
+		BFBCBB9B1F769E90004DC835 /* UIImage+WDCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCBB931F769E90004DC835 /* UIImage+WDCrop.m */; };
+		BFBCBB9C1F769E90004DC835 /* WDImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCBB951F769E90004DC835 /* WDImageManager.m */; };
+		BFBCBB9D1F769E90004DC835 /* WDImageMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCBB971F769E90004DC835 /* WDImageMaskView.m */; };
+		BFBCBB9E1F769E90004DC835 /* WDTailoringController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCBB9A1F769E90004DC835 /* WDTailoringController.m */; };
+		C50EDC8C1F0F7621002BBA4B /* GTSystemAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = C50EDC8B1F0F7621002BBA4B /* GTSystemAuth.m */; };
+		C50EDC921F0FB30D002BBA4B /* GTAuthInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50EDC911F0FB30D002BBA4B /* GTAuthInfoModel.m */; };
+		C50EDC981F0FB4CA002BBA4B /* GTAuthenticateService.m in Sources */ = {isa = PBXBuildFile; fileRef = C50EDC971F0FB4CA002BBA4B /* GTAuthenticateService.m */; };
+		C50EDC9B1F0FB7DC002BBA4B /* GTUserAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50EDC9A1F0FB7DC002BBA4B /* GTUserAuthModel.m */; };
+		C50EDC9E1F0FB7F0002BBA4B /* GTBankCardAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50EDC9D1F0FB7F0002BBA4B /* GTBankCardAuthModel.m */; };
+		C50EDCA11F0FB7FF002BBA4B /* GTPhoneAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50EDCA01F0FB7FF002BBA4B /* GTPhoneAuthModel.m */; };
+		C50EDCA41F0FB815002BBA4B /* GTAlipayAuthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C50EDCA31F0FB815002BBA4B /* GTAlipayAuthModel.m */; };
+		C516777A1F0CB13F005337CD /* GTUploadAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C51677791F0CB13F005337CD /* GTUploadAddressBookViewController.m */; };
+		C516777D1F0CE4C9005337CD /* GTAlipaySubmitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C516777C1F0CE4C9005337CD /* GTAlipaySubmitView.m */; };
+		C53D0B131F04A86F005BFF1E /* GTIDCardAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B121F04A86F005BFF1E /* GTIDCardAuthViewController.m */; };
+		C53D0B431F04E447005BFF1E /* GTAuthCenterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B2F1F04E447005BFF1E /* GTAuthCenterCollectionViewCell.m */; };
+		C53D0B441F04E447005BFF1E /* GTAuthCenterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B311F04E447005BFF1E /* GTAuthCenterHeaderView.m */; };
+		C53D0B451F04E447005BFF1E /* GTAuthFailureInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B331F04E447005BFF1E /* GTAuthFailureInfoView.m */; };
+		C53D0B461F04E447005BFF1E /* GTAuthProcessingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B351F04E447005BFF1E /* GTAuthProcessingView.m */; };
+		C53D0B471F04E447005BFF1E /* GTAuthSuccessInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B371F04E447005BFF1E /* GTAuthSuccessInfoView.m */; };
+		C53D0B481F04E447005BFF1E /* GTContactUsBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B391F04E447005BFF1E /* GTContactUsBarView.m */; };
+		C53D0B491F04E447005BFF1E /* GTIDCardDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B3C1F04E447005BFF1E /* GTIDCardDisplayView.m */; };
+		C53D0B4B1F04E447005BFF1E /* GTIDCardSubmitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B401F04E447005BFF1E /* GTIDCardSubmitView.m */; };
+		C53D0B4C1F04E447005BFF1E /* GTIDCardSucceedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B421F04E447005BFF1E /* GTIDCardSucceedView.m */; };
+		C53D0B521F0517E4005BFF1E /* GTLabelTextFieldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B511F0517E4005BFF1E /* GTLabelTextFieldTableViewCell.m */; };
+		C53D0B581F052F60005BFF1E /* GTBankCardAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B571F052F60005BFF1E /* GTBankCardAuthViewController.m */; };
+		C53D0B5B1F052F8B005BFF1E /* GTPhoneAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B5A1F052F8B005BFF1E /* GTPhoneAuthViewController.m */; };
+		C53D0B5E1F052F9B005BFF1E /* GTAlipayAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D0B5D1F052F9B005BFF1E /* GTAlipayAuthViewController.m */; };
+		C54349971F0E169000072E1F /* GTLabelTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54349961F0E169000072E1F /* GTLabelTextFieldView.m */; };
+		C545850B1F0351C8004C1E46 /* GTAuthCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C545850A1F0351C8004C1E46 /* GTAuthCenterViewController.m */; };
+		C54CC28D1F020A2400FF3851 /* GTMineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54CC28C1F020A2400FF3851 /* GTMineHeaderView.m */; };
+		C54CC2901F020AE500FF3851 /* GTMineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C54CC28F1F020AE500FF3851 /* GTMineTableViewCell.m */; };
+		C54CC2931F0225A100FF3851 /* GTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54CC2921F0225A100FF3851 /* GTMineViewController.m */; };
+		C55241801F0A489A008ADE7D /* GTUploadAddressBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = C552417F1F0A489A008ADE7D /* GTUploadAddressBookView.m */; };
+		C55241861F0A63A6008ADE7D /* GTBankCardCommitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55241851F0A63A6008ADE7D /* GTBankCardCommitViewController.m */; };
+		C565CC2B1F05E6C300CCAFFE /* GTAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC2A1F05E6C300CCAFFE /* GTAboutUsViewController.m */; };
+		C565CC311F05F30E00CCAFFE /* GTUserSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC301F05F30E00CCAFFE /* GTUserSettingsViewController.m */; };
+		C565CC371F061E1400CCAFFE /* GTFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC361F061E1400CCAFFE /* GTFeedBackViewController.m */; };
+		C565CC411F0627E100CCAFFE /* GTContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC401F0627E100CCAFFE /* GTContactUsViewController.m */; };
+		C565CC451F062C0200CCAFFE /* GTContactUsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC441F062C0200CCAFFE /* GTContactUsItemView.m */; };
+		C565CC481F062C6000CCAFFE /* GTOnlineServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC471F062C6000CCAFFE /* GTOnlineServiceViewController.m */; };
+		C565CC4E1F06714100CCAFFE /* GTBankCardSucceedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC4D1F06714100CCAFFE /* GTBankCardSucceedView.m */; };
+		C565CC511F06720200CCAFFE /* GTPhoneSucceedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC501F06720200CCAFFE /* GTPhoneSucceedView.m */; };
+		C565CC541F06721B00CCAFFE /* GTAlipaySucceedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C565CC531F06721B00CCAFFE /* GTAlipaySucceedView.m */; };
+		C58B126C1F1726A7003A8FC0 /* GTQiYuCustomerService.m in Sources */ = {isa = PBXBuildFile; fileRef = C58B126B1F1726A7003A8FC0 /* GTQiYuCustomerService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FBCDABB1EFCC17B001FC63B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FBCDA991EFCC17B001FC63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FBCDAA01EFCC17B001FC63B;
+			remoteInfo = GoldTreasure;
+		};
+		7FBCDAC61EFCC17B001FC63B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FBCDA991EFCC17B001FC63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FBCDAA01EFCC17B001FC63B;
+			remoteInfo = GoldTreasure;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FA4937D417AB538E225A56 /* Pods-GoldTreasureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldTreasureTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldTreasureTests/Pods-GoldTreasureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E057C521F0C89F0001C2F8F /* GTRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTRefreshView.swift; sourceTree = "<group>"; };
+		0E1148381F027A8000B78849 /* GTApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTApi.h; sourceTree = "<group>"; };
+		0E1148391F027A8000B78849 /* GTApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTApi.m; sourceTree = "<group>"; };
+		0E14641C1F0CACC80010AF99 /* GTRootTabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTRootTabbarVC.swift; sourceTree = "<group>"; };
+		0E14641E1F0CAF920010AF99 /* GTRootNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTRootNavVC.swift; sourceTree = "<group>"; };
+		0E155E141F234A8800601A2D /* GTEnumDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTEnumDefine.h; sourceTree = "<group>"; };
+		0E155E1A1F234EA100601A2D /* GTConfDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTConfDefine.h; sourceTree = "<group>"; };
+		0E155E1C1F23511F00601A2D /* GTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTColor.h; sourceTree = "<group>"; };
+		0E155E1D1F23511F00601A2D /* GTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTColor.m; sourceTree = "<group>"; };
+		0E155E1E1F23511F00601A2D /* GTFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFont.h; sourceTree = "<group>"; };
+		0E155E1F1F23511F00601A2D /* GTUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUIDefine.h; sourceTree = "<group>"; };
+		0E155E201F23511F00601A2D /* GTUIDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTUIDefine.swift; sourceTree = "<group>"; };
+		0E155E231F23513200601A2D /* GTFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFont.m; sourceTree = "<group>"; };
+		0E1FAA151F06269700D6AB40 /* Data+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+GT.swift"; sourceTree = "<group>"; };
+		0E37EFAF1F029350000834C6 /* GTNetError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNetError.h; sourceTree = "<group>"; };
+		0E37EFB01F029350000834C6 /* GTNetError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNetError.m; sourceTree = "<group>"; };
+		0E38CFA81F074C580072D323 /* UpYunBlockUpLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYunBlockUpLoader.h; sourceTree = "<group>"; };
+		0E38CFA91F074C580072D323 /* UpYunBlockUpLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYunBlockUpLoader.m; sourceTree = "<group>"; };
+		0E38CFAA1F074C580072D323 /* UpYunFormUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYunFormUploader.h; sourceTree = "<group>"; };
+		0E38CFAB1F074C580072D323 /* UpYunFormUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYunFormUploader.m; sourceTree = "<group>"; };
+		0E38CFAC1F074C580072D323 /* UpYunUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYunUploader.h; sourceTree = "<group>"; };
+		0E38CFAE1F074C580072D323 /* UpApiUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpApiUtils.h; sourceTree = "<group>"; };
+		0E38CFAF1F074C580072D323 /* UpApiUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpApiUtils.m; sourceTree = "<group>"; };
+		0E38CFB01F074C580072D323 /* UpSimpleHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpSimpleHttpClient.h; sourceTree = "<group>"; };
+		0E38CFB11F074C580072D323 /* UpSimpleHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpSimpleHttpClient.m; sourceTree = "<group>"; };
+		0E38CFB41F074C580072D323 /* UPHTTPBodyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPHTTPBodyPart.h; sourceTree = "<group>"; };
+		0E38CFB51F074C580072D323 /* UPHTTPBodyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPHTTPBodyPart.m; sourceTree = "<group>"; };
+		0E38CFB61F074C580072D323 /* UPHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPHTTPClient.h; sourceTree = "<group>"; };
+		0E38CFB71F074C580072D323 /* UPHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPHTTPClient.m; sourceTree = "<group>"; };
+		0E38CFB81F074C580072D323 /* UPMultipartBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPMultipartBody.h; sourceTree = "<group>"; };
+		0E38CFB91F074C580072D323 /* UPMultipartBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPMultipartBody.m; sourceTree = "<group>"; };
+		0E38CFBB1F074C580072D323 /* NSData+MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5Digest.h"; sourceTree = "<group>"; };
+		0E38CFBC1F074C580072D323 /* NSData+MD5Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5Digest.m"; sourceTree = "<group>"; };
+		0E38CFBD1F074C580072D323 /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSHash.h"; sourceTree = "<group>"; };
+		0E38CFBE1F074C580072D323 /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSHash.m"; sourceTree = "<group>"; };
+		0E38CFC01F074C580072D323 /* UPMutUploaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPMutUploaderManager.h; sourceTree = "<group>"; };
+		0E38CFC11F074C580072D323 /* UPMutUploaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPMutUploaderManager.m; sourceTree = "<group>"; };
+		0E38CFC21F074C580072D323 /* UpYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpYun.h; sourceTree = "<group>"; };
+		0E38CFC31F074C580072D323 /* UpYun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpYun.m; sourceTree = "<group>"; };
+		0E38CFC41F074C580072D323 /* UPYUNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPYUNConfig.h; sourceTree = "<group>"; };
+		0E38CFC51F074C580072D323 /* UPYUNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPYUNConfig.m; sourceTree = "<group>"; };
+		0E3F24401F14809E00F7D17B /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		0E3F24411F14809E00F7D17B /* libLLPaySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLLPaySDK.a; sourceTree = "<group>"; };
+		0E3F24421F14809E00F7D17B /* LLPaySdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPaySdk.h; sourceTree = "<group>"; };
+		0E3F24431F14809E00F7D17B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0E3F24441F14809E00F7D17B /* walletResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = walletResources.bundle; sourceTree = "<group>"; };
+		0E3F24491F14B81500F7D17B /* GTCommonService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCommonService.h; sourceTree = "<group>"; };
+		0E3F244A1F14B81500F7D17B /* GTCommonService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCommonService.m; sourceTree = "<group>"; };
+		0E3F24511F14F6D300F7D17B /* GTRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTRouter.swift; sourceTree = "<group>"; };
+		0E3F24531F14F96E00F7D17B /* GTAdapt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAdapt.h; sourceTree = "<group>"; };
+		0E3F24541F14F96E00F7D17B /* GTAdapt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAdapt.m; sourceTree = "<group>"; };
+		0E4102011F343B6100EBCAA0 /* GTDefaultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTDefaultController.swift; sourceTree = "<group>"; };
+		0E451CA41F1CE9E500B026BA /* UIBarButtonItem+GT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+GT.h"; sourceTree = "<group>"; };
+		0E451CA51F1CE9E500B026BA /* UIBarButtonItem+GT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+GT.m"; sourceTree = "<group>"; };
+		0E4632881F3AC23E00625E2A /* GTTransNavbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTTransNavbar.swift; sourceTree = "<group>"; };
+		0E4F9BCD1F31D5CF00998212 /* UIButton+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+GT.swift"; sourceTree = "<group>"; };
+		0E5916401F18E92F00FA292C /* GTWKWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTWKWebVC.swift; sourceTree = "<group>"; };
+		0E61F11F1F23540A00D00C81 /* GTCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTCommonDefine.m; sourceTree = "<group>"; };
+		0E61F1231F25A4A100D00C81 /* GTStrDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTStrDefine.swift; sourceTree = "<group>"; };
+		0E61F12A1F271FC800D00C81 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		0E61F12B1F271FC800D00C81 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		0E64E1B81F01EC9800F1A903 /* GoldTreasure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoldTreasure-Bridging-Header.h"; sourceTree = "<group>"; };
+		0E6F4F351F1067A5002E50D2 /* GTRealmService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRealmService.h; sourceTree = "<group>"; };
+		0E6F4F361F1067A5002E50D2 /* GTRealmService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRealmService.m; sourceTree = "<group>"; };
+		0E6F4F381F10CEE3002E50D2 /* GTVerification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTVerification.h; sourceTree = "<group>"; };
+		0E6F4F391F10CEE3002E50D2 /* GTVerification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTVerification.m; sourceTree = "<group>"; };
+		0E73E7CB1F5665AF00EE6A76 /* UILable+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+GT.swift"; sourceTree = "<group>"; };
+		0E73F8251F0CD98A00EAEC9F /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		0E73F8261F0CD98A00EAEC9F /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		0E73F8281F0CDBFF00EAEC9F /* NSObject+GT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GT.h"; sourceTree = "<group>"; };
+		0E73F8291F0CDBFF00EAEC9F /* NSObject+GT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GT.m"; sourceTree = "<group>"; };
+		0E73F82B1F0CFF6600EAEC9F /* NSNumber+GT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+GT.h"; sourceTree = "<group>"; };
+		0E73F82C1F0CFF6600EAEC9F /* NSNumber+GT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+GT.m"; sourceTree = "<group>"; };
+		0E73F82E1F0D16C200EAEC9F /* GTHomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTHomePageController.h; sourceTree = "<group>"; };
+		0E73F82F1F0D16C200EAEC9F /* GTHomePageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTHomePageController.m; sourceTree = "<group>"; };
+		0E8695A51F09E9DF0064A7F5 /* libUubeeSuperReal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUubeeSuperReal.a; sourceTree = "<group>"; };
+		0E8695A81F0A2D500064A7F5 /* GTLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLoginService.h; sourceTree = "<group>"; };
+		0E8695A91F0A2D500064A7F5 /* GTLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLoginService.m; sourceTree = "<group>"; };
+		0E8695AE1F0B39030064A7F5 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		0E8695AF1F0B39030064A7F5 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		0E8B78731F0B447B007CE34B /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		0E8B78741F0B447B007CE34B /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		0E9D1D8A1F17737600A68756 /* GTGuiderImgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTGuiderImgVC.swift; sourceTree = "<group>"; };
+		0E9D1D8D1F17979F00A68756 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		0E9D1D8E1F17979F00A68756 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		0E9D1D911F1797E400A68756 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0E9D1D931F1797EF00A68756 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0E9D1D951F17980000A68756 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0E9D1D971F1798B600A68756 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0EA785671F0260280067F4BA /* GTNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTNet.swift; sourceTree = "<group>"; };
+		0EA785691F0262B30067F4BA /* GTResModelCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTResModelCommon.swift; sourceTree = "<group>"; };
+		0EA7856B1F02639A0067F4BA /* GTReqModelCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTReqModelCommon.swift; sourceTree = "<group>"; };
+		0EAA25B61F0BB34600FA0ED9 /* GTHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTHUD.swift; sourceTree = "<group>"; };
+		0EAB3C911F3C79AD0091B76E /* UINavBar+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavBar+GT.swift"; sourceTree = "<group>"; };
+		0EAB3C931F3D3A310091B76E /* UIViewController+GT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GT.h"; sourceTree = "<group>"; };
+		0EAB3C941F3D3A310091B76E /* UIViewController+GT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GT.m"; sourceTree = "<group>"; };
+		0EB539811F15F8EF004D99EC /* GTNotiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTNotiView.swift; sourceTree = "<group>"; };
+		0EB53FE81F035B74001D1571 /* GTTEST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTTEST.swift; sourceTree = "<group>"; };
+		0EB53FEB1F037B8D001D1571 /* GTApiCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTApiCode.swift; sourceTree = "<group>"; };
+		0EB53FEE1F039156001D1571 /* GTUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTUser.swift; sourceTree = "<group>"; };
+		0EB53FF31F0392B4001D1571 /* GTCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCommonDefine.h; sourceTree = "<group>"; };
+		0EB53FF61F03969C001D1571 /* GTClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTClient.swift; sourceTree = "<group>"; };
+		0EB53FFD1F03A006001D1571 /* GTAppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAppMacro.h; sourceTree = "<group>"; };
+		0EB540001F03AB55001D1571 /* Int+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+GT.swift"; sourceTree = "<group>"; };
+		0EB540041F04DD8B001D1571 /* String+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GT.swift"; sourceTree = "<group>"; };
+		0EB540061F04DD90001D1571 /* UIColor+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+GT.swift"; sourceTree = "<group>"; };
+		0EB540081F0521B1001D1571 /* GTSecUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTSecUtils.swift; sourceTree = "<group>"; };
+		0EBF6BDC1F205F3100483292 /* GTUpdateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTUpdateView.xib; sourceTree = "<group>"; };
+		0EBF6BDE1F20649600483292 /* GTUpdateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTUpdateView.swift; sourceTree = "<group>"; };
+		0EBFEB701F15ECAA00CEBE78 /* GTPopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTPopController.swift; sourceTree = "<group>"; };
+		0EC9C8CF1F28944A00D92201 /* GTSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSize.h; sourceTree = "<group>"; };
+		0EC9C8D01F28944A00D92201 /* GTSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSize.m; sourceTree = "<group>"; };
+		0EC9C8D21F28B20B00D92201 /* NSObject+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+GT.swift"; sourceTree = "<group>"; };
+		0ED6C6011F0CD302001E36B8 /* UIImage+GT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+GT.swift"; sourceTree = "<group>"; };
+		0ED837F31F0738A100119191 /* GTRootUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRootUINavigationController.h; sourceTree = "<group>"; };
+		0ED837F41F0738A100119191 /* GTRootUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRootUINavigationController.m; sourceTree = "<group>"; };
+		0EE42B041F012386001D7D88 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		0EE42B051F012386001D7D88 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		0EE42B0E1F0124DA001D7D88 /* BaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarViewController.h; sourceTree = "<group>"; };
+		0EE42B0F1F0124DA001D7D88 /* BaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarViewController.m; sourceTree = "<group>"; };
+		0EE42B121F012617001D7D88 /* ReturnBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReturnBack.h; sourceTree = "<group>"; };
+		0EE42B131F012617001D7D88 /* ReturnBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReturnBack.m; sourceTree = "<group>"; };
+		0EE42B151F012620001D7D88 /* RightButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightButton.h; sourceTree = "<group>"; };
+		0EE42B161F012620001D7D88 /* RightButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightButton.m; sourceTree = "<group>"; };
+		0EE42B201F012746001D7D88 /* TimeTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTools.h; sourceTree = "<group>"; };
+		0EE42B211F012746001D7D88 /* TimeTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTools.m; sourceTree = "<group>"; };
+		0EE42B261F012771001D7D88 /* NSString+TelNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TelNumber.h"; sourceTree = "<group>"; };
+		0EE42B271F012771001D7D88 /* NSString+TelNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TelNumber.m"; sourceTree = "<group>"; };
+		0EE42B281F012771001D7D88 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		0EE42B291F012771001D7D88 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		0EE42B2D1F01283B001D7D88 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EE42B2E1F01283B001D7D88 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0EEA10661F08C548001F56F6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0EEA10681F08C564001F56F6 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		0EEA106A1F08C574001F56F6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0EEA106C1F08C57E001F56F6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0EEA106E1F08C587001F56F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0EEA10701F08C597001F56F6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0EEA10721F08C59E001F56F6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0EEA10741F08C5A6001F56F6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0EEA10761F08C5B2001F56F6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0EEA10B81F08D214001F56F6 /* TViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TViewController.swift; sourceTree = "<group>"; };
+		0EEA10BB1F08D253001F56F6 /* TViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TViewController.xib; sourceTree = "<group>"; };
+		0EEA10CD1F08E1F9001F56F6 /* TAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TAuthViewController.swift; sourceTree = "<group>"; };
+		0EEA10CE1F08E1F9001F56F6 /* TAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAuthViewController.xib; sourceTree = "<group>"; };
+		0EEC24C91F15BE2700FA529D /* GTCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCheck.swift; sourceTree = "<group>"; };
+		0EF3C06F1F161A7600F31D85 /* GTNotiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTNotiView.xib; sourceTree = "<group>"; };
+		0EF3C0751F16217D00F31D85 /* GTNotiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTNotiController.swift; sourceTree = "<group>"; };
+		0EF3C0791F164E4400F31D85 /* UIView+GKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GKExtension.h"; sourceTree = "<group>"; };
+		0EF3C07A1F164E4400F31D85 /* UIView+GKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GKExtension.m"; sourceTree = "<group>"; };
+		0EF3C07B1F164E4400F31D85 /* GKCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCover.h; sourceTree = "<group>"; };
+		0EF3C07C1F164E4400F31D85 /* GKCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCover.m; sourceTree = "<group>"; };
+		0EF3C07D1F164E4400F31D85 /* GKCoverEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCoverEnum.h; sourceTree = "<group>"; };
+		0EF3C07F1F164E4400F31D85 /* transparent_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent_bg.png; sourceTree = "<group>"; };
+		0EFC86F71F0E390B00EA278E /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		0EFC86F91F0E39B900EA278E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0EFC86FA1F0E39B900EA278E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0EFC86FB1F0E39B900EA278E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0EFC86FC1F0E39B900EA278E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0EFC87031F0E3C9900EA278E /* GoldTreasure.entitlements */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text.plist.entitlements; path = GoldTreasure.entitlements; sourceTree = "<group>"; };
+		0EFC87071F0F62F600EA278E /* GTLoginRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTLoginRoot.swift; sourceTree = "<group>"; };
+		0EFC87091F0F78D200EA278E /* GTNoti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTNoti.swift; sourceTree = "<group>"; };
+		0EFC870B1F0F85B000EA278E /* GTDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTDB.swift; sourceTree = "<group>"; };
+		0EFC870D1F0F8C2100EA278E /* GTDBUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDBUserModel.h; sourceTree = "<group>"; };
+		0EFC870E1F0F8C2100EA278E /* GTDBUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDBUserModel.m; sourceTree = "<group>"; };
+		5A95C40FD3981BBCED9FA19A /* Pods_GoldTreasure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldTreasure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7926A36A929659707E402A95 /* Pods-GoldTreasure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldTreasure.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldTreasure/Pods-GoldTreasure.debug.xcconfig"; sourceTree = "<group>"; };
+		7F0C61E11F01F1840049B8E1 /* HomePageHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageHeadView.h; sourceTree = "<group>"; };
+		7F0C61E21F01F1840049B8E1 /* HomePageHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageHeadView.m; sourceTree = "<group>"; };
+		7F0C61E51F01F8CC0049B8E1 /* OrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderModel.h; sourceTree = "<group>"; };
+		7F0C61E61F01F8CC0049B8E1 /* OrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderModel.m; sourceTree = "<group>"; };
+		7F0C61E81F022C4E0049B8E1 /* UIButton+GTImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GTImageTitleSpacing.h"; sourceTree = "<group>"; };
+		7F0C61E91F022C4E0049B8E1 /* UIButton+GTImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GTImageTitleSpacing.m"; sourceTree = "<group>"; };
+		7F0C61EB1F0252D50049B8E1 /* GTFlexSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFlexSliderCell.h; sourceTree = "<group>"; };
+		7F0C61EC1F0252D50049B8E1 /* GTFlexSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFlexSliderCell.m; sourceTree = "<group>"; };
+		7F0C61F01F0253670049B8E1 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		7F0C61F11F0253670049B8E1 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		7F0C61F21F0253670049B8E1 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		7F0C61F31F0253670049B8E1 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		7F0C61F41F0253670049B8E1 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		7F0C61F51F0253670049B8E1 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		7F0C61F61F0253670049B8E1 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		7F0C61F81F0253670049B8E1 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		7F0C61F91F0253670049B8E1 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		7F0C61FA1F0253670049B8E1 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		7F0C61FB1F0253670049B8E1 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		7F0C61FC1F0253670049B8E1 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		7F0C61FD1F0253670049B8E1 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		7F53ABBE1F0257AB00710468 /* GTNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNormalCell.h; sourceTree = "<group>"; };
+		7F53ABBF1F0257AB00710468 /* GTNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNormalCell.m; sourceTree = "<group>"; };
+		7F53ABC51F03560200710468 /* GTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTBaseViewController.h; sourceTree = "<group>"; };
+		7F53ABC61F03560200710468 /* GTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTBaseViewController.m; sourceTree = "<group>"; };
+		7F53ABC81F0356D700710468 /* GTNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNotificationController.h; sourceTree = "<group>"; };
+		7F53ABC91F0356D700710468 /* GTNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNotificationController.m; sourceTree = "<group>"; };
+		7F53ABCC1F037AA100710468 /* GTLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLoginController.h; sourceTree = "<group>"; };
+		7F53ABCD1F037AA100710468 /* GTLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLoginController.m; sourceTree = "<group>"; };
+		7F53ABD01F03823000710468 /* GTLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLoginView.h; sourceTree = "<group>"; };
+		7F53ABD11F03823000710468 /* GTLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLoginView.m; sourceTree = "<group>"; };
+		7F55FF4E1F1DD465002E90A6 /* GTValuePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTValuePickerView.h; sourceTree = "<group>"; };
+		7F55FF4F1F1DD465002E90A6 /* GTValuePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTValuePickerView.m; sourceTree = "<group>"; };
+		7F5E5DB63C1C7EAA067D0D6C /* Pods-GoldTreasure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldTreasure.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldTreasure/Pods-GoldTreasure.release.xcconfig"; sourceTree = "<group>"; };
+		7FBCDAA11EFCC17B001FC63B /* GoldTreasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldTreasure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBCDAA51EFCC17B001FC63B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		7FBCDAA71EFCC17B001FC63B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7FBCDAA81EFCC17B001FC63B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7FBCDAB31EFCC17B001FC63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FBCDABA1EFCC17B001FC63B /* GoldTreasureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldTreasureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBCDABE1EFCC17B001FC63B /* GoldTreasureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldTreasureTests.m; sourceTree = "<group>"; };
+		7FBCDAC01EFCC17B001FC63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FBCDAC51EFCC17B001FC63B /* GoldTreasureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldTreasureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FBCDAC91EFCC17B001FC63B /* GoldTreasureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldTreasureUITests.m; sourceTree = "<group>"; };
+		7FBCDACB1EFCC17B001FC63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD97F041F1755D700880CDC /* ScrollPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollPickerView.h; sourceTree = "<group>"; };
+		7FD97F051F1755D700880CDC /* ScrollPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollPickerView.m; sourceTree = "<group>"; };
+		7FE568CF1F1F4FF5006F03F6 /* GTUserAgreementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUserAgreementController.h; sourceTree = "<group>"; };
+		7FE568D01F1F4FF5006F03F6 /* GTUserAgreementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTUserAgreementController.m; sourceTree = "<group>"; };
+		7FFEBF0F1F04965100C5ED51 /* GTRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTRegisterController.h; sourceTree = "<group>"; };
+		7FFEBF101F04965100C5ED51 /* GTRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTRegisterController.m; sourceTree = "<group>"; };
+		7FFEBF181F04DA6800C5ED51 /* GTForgetPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTForgetPasswordController.h; sourceTree = "<group>"; };
+		7FFEBF191F04DA6800C5ED51 /* GTForgetPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTForgetPasswordController.m; sourceTree = "<group>"; };
+		7FFEBF1B1F04DCDB00C5ED51 /* GTForgetPasswordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTForgetPasswordCell.h; sourceTree = "<group>"; };
+		7FFEBF1C1F04DCDB00C5ED51 /* GTForgetPasswordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTForgetPasswordCell.m; sourceTree = "<group>"; };
+		7FFEBF1F1F074A5C00C5ED51 /* GTShowMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShowMessage.h; sourceTree = "<group>"; };
+		7FFEBF201F074A5C00C5ED51 /* GTShowMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShowMessage.m; sourceTree = "<group>"; };
+		7FFEBF241F0770EC00C5ED51 /* GTContactsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTContactsController.h; sourceTree = "<group>"; };
+		7FFEBF251F0770EC00C5ED51 /* GTContactsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTContactsController.m; sourceTree = "<group>"; };
+		7FFEBF281F0773E700C5ED51 /* GTContactsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTContactsCell.h; sourceTree = "<group>"; };
+		7FFEBF291F0773E700C5ED51 /* GTContactsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTContactsCell.m; sourceTree = "<group>"; };
+		7FFEBF6D1F07976000C5ED51 /* GTContactsTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTContactsTitleCell.h; sourceTree = "<group>"; };
+		7FFEBF6E1F07976000C5ED51 /* GTContactsTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTContactsTitleCell.m; sourceTree = "<group>"; };
+		7FFEBF701F09E55100C5ED51 /* GTAmountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAmountController.h; sourceTree = "<group>"; };
+		7FFEBF711F09E55100C5ED51 /* GTAmountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAmountController.m; sourceTree = "<group>"; };
+		7FFEBF741F09F1A000C5ED51 /* libUubeeSuperReal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUubeeSuperReal.a; sourceTree = "<group>"; };
+		7FFEBF761F09F1A000C5ED51 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		7FFEBF771F09F1A000C5ED51 /* UDIDSafeAuthEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDIDSafeAuthEngine.h; sourceTree = "<group>"; };
+		7FFEBF781F09F1A000C5ED51 /* UDIDSafeDataDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDIDSafeDataDefine.h; sourceTree = "<group>"; };
+		7FFEBF791F09F1A000C5ED51 /* UDIDSafeOCREngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDIDSafeOCREngine.h; sourceTree = "<group>"; };
+		7FFEBF7D1F09F1A000C5ED51 /* MoxieSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoxieSDK.h; sourceTree = "<group>"; };
+		7FFEBF7E1F09F1A000C5ED51 /* libMoxieSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMoxieSDK.a; sourceTree = "<group>"; };
+		7FFEBF801F09F1A000C5ED51 /* mx_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx_back@2x.png"; sourceTree = "<group>"; };
+		7FFEBF811F09F1A000C5ED51 /* mx_finish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx_finish@2x.png"; sourceTree = "<group>"; };
+		7FFEBF821F09F1A000C5ED51 /* mx_loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx_loading@2x.png"; sourceTree = "<group>"; };
+		7FFEBF831F09F1A000C5ED51 /* mx_refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mx_refresh@2x.png"; sourceTree = "<group>"; };
+		7FFEBF8C1F0A206800C5ED51 /* GTSelectAmountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSelectAmountCell.h; sourceTree = "<group>"; };
+		7FFEBF8D1F0A206800C5ED51 /* GTSelectAmountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSelectAmountCell.m; sourceTree = "<group>"; };
+		7FFEBF8F1F0A2A0000C5ED51 /* GTAmountNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAmountNormalCell.h; sourceTree = "<group>"; };
+		7FFEBF901F0A2A0000C5ED51 /* GTAmountNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAmountNormalCell.m; sourceTree = "<group>"; };
+		7FFEBF921F0B231900C5ED51 /* GTTripartiteContractController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTripartiteContractController.h; sourceTree = "<group>"; };
+		7FFEBF931F0B231900C5ED51 /* GTTripartiteContractController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTripartiteContractController.m; sourceTree = "<group>"; };
+		7FFEBF951F0BC02400C5ED51 /* GTSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSignatureView.h; sourceTree = "<group>"; };
+		7FFEBF961F0BC02400C5ED51 /* GTSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSignatureView.m; sourceTree = "<group>"; };
+		7FFEBF981F0C879500C5ED51 /* GTShowSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTShowSignature.h; sourceTree = "<group>"; };
+		7FFEBF991F0C879500C5ED51 /* GTShowSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTShowSignature.m; sourceTree = "<group>"; };
+		7FFEBF9B1F0CD51100C5ED51 /* GTSubmittedSuccessfullyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSubmittedSuccessfullyController.h; sourceTree = "<group>"; };
+		7FFEBF9C1F0CD51100C5ED51 /* GTSubmittedSuccessfullyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSubmittedSuccessfullyController.m; sourceTree = "<group>"; };
+		7FFEBF9F1F0E071100C5ED51 /* GTNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNotificationCell.h; sourceTree = "<group>"; };
+		7FFEBFA01F0E071100C5ED51 /* GTNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNotificationCell.m; sourceTree = "<group>"; };
+		7FFEBFA31F0E13A800C5ED51 /* GTNotificationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNotificationModel.h; sourceTree = "<group>"; };
+		7FFEBFA41F0E13A800C5ED51 /* GTNotificationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNotificationModel.m; sourceTree = "<group>"; };
+		7FFEBFA61F0E5E8800C5ED51 /* GTNotificationNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNotificationNormalCell.h; sourceTree = "<group>"; };
+		7FFEBFA71F0E5E8800C5ED51 /* GTNotificationNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNotificationNormalCell.m; sourceTree = "<group>"; };
+		88C695786817498637BC7B19 /* Pods-GoldTreasureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldTreasureUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldTreasureUITests/Pods-GoldTreasureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3A30CA97C972643A3324B1A /* Pods_GoldTreasureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldTreasureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73BC5405791685111B0863E /* Pods-GoldTreasureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldTreasureUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldTreasureUITests/Pods-GoldTreasureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AA5D0A8345FFEB155148D0EF /* Pods-GoldTreasureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldTreasureTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldTreasureTests/Pods-GoldTreasureTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB0FC9BE1F17072400E5DD98 /* PaybackEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaybackEndViewController.h; sourceTree = "<group>"; };
+		BB0FC9BF1F17072400E5DD98 /* PaybackEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaybackEndViewController.m; sourceTree = "<group>"; };
+		BB328EA11F0357650021750A /* PaybackHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaybackHeaderView.h; sourceTree = "<group>"; };
+		BB328EA21F0357650021750A /* PaybackHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaybackHeaderView.m; sourceTree = "<group>"; };
+		BB7202491F1500CB00BD2DA7 /* LLOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLOrder.h; sourceTree = "<group>"; };
+		BB72024A1F1500CB00BD2DA7 /* LLOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOrder.m; sourceTree = "<group>"; };
+		BB8A920A1F1F52B300494448 /* NSDate+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Custom.h"; sourceTree = "<group>"; };
+		BB8A920B1F1F52B300494448 /* NSDate+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Custom.m"; sourceTree = "<group>"; };
+		BBAF95801F07A9640053B08A /* PersistLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistLoanViewController.h; sourceTree = "<group>"; };
+		BBAF95811F07A9640053B08A /* PersistLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistLoanViewController.m; sourceTree = "<group>"; };
+		BBAF95831F07A9850053B08A /* NowPaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowPaybackViewController.h; sourceTree = "<group>"; };
+		BBAF95841F07A9850053B08A /* NowPaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowPaybackViewController.m; sourceTree = "<group>"; };
+		BBAF95871F09D5CF0053B08A /* NowPaybackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NowPaybackCell.h; sourceTree = "<group>"; };
+		BBAF95881F09D5CF0053B08A /* NowPaybackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NowPaybackCell.m; sourceTree = "<group>"; };
+		BBAF958A1F0A30050053B08A /* PaybackWayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaybackWayCell.h; sourceTree = "<group>"; };
+		BBAF958B1F0A30050053B08A /* PaybackWayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaybackWayCell.m; sourceTree = "<group>"; };
+		BBAF958D1F0A45F60053B08A /* GTTradeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTradeService.h; sourceTree = "<group>"; };
+		BBAF958E1F0A45F60053B08A /* GTTradeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTradeService.m; sourceTree = "<group>"; };
+		BBB13C911F05F8730066393F /* LoanDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanDetailViewController.h; sourceTree = "<group>"; };
+		BBB13C921F05F8730066393F /* LoanDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanDetailViewController.m; sourceTree = "<group>"; };
+		BBB13C961F05FDE60066393F /* LoanDeatialHeadrView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanDeatialHeadrView.h; sourceTree = "<group>"; };
+		BBB13C971F05FDE60066393F /* LoanDeatialHeadrView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanDeatialHeadrView.m; sourceTree = "<group>"; };
+		BBB13C9C1F0671B60066393F /* LateFeeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LateFeeCell.h; sourceTree = "<group>"; };
+		BBB13C9D1F0671B60066393F /* LateFeeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LateFeeCell.m; sourceTree = "<group>"; };
+		BBB13C9F1F0671F70066393F /* LateFeeHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LateFeeHeaderCell.h; sourceTree = "<group>"; };
+		BBB13CA01F0671F70066393F /* LateFeeHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LateFeeHeaderCell.m; sourceTree = "<group>"; };
+		BBB13CA71F07495A0066393F /* feeSummaryFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feeSummaryFooterView.h; sourceTree = "<group>"; };
+		BBB13CA81F07495A0066393F /* feeSummaryFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = feeSummaryFooterView.m; sourceTree = "<group>"; };
+		BBD3814E1F0292350098603F /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		BBD381511F0293920098603F /* PaybackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaybackView.h; sourceTree = "<group>"; };
+		BBD381521F0293920098603F /* PaybackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaybackView.m; sourceTree = "<group>"; };
+		BBD381551F0293A10098603F /* GTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTTableViewCell.h; sourceTree = "<group>"; };
+		BBD381561F0293A10098603F /* GTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTTableViewCell.m; sourceTree = "<group>"; };
+		BBD381591F0294860098603F /* GTLoanOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLoanOrderViewController.h; sourceTree = "<group>"; };
+		BBD3815A1F0294860098603F /* GTLoanOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLoanOrderViewController.m; sourceTree = "<group>"; };
+		BBD3815D1F0294940098603F /* PaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaybackViewController.h; sourceTree = "<group>"; };
+		BBD3815E1F0294940098603F /* PaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaybackViewController.m; sourceTree = "<group>"; };
+		BBDC65F11F0E36B600AB1B0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFBCBB921F769E90004DC835 /* UIImage+WDCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WDCrop.h"; sourceTree = "<group>"; };
+		BFBCBB931F769E90004DC835 /* UIImage+WDCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WDCrop.m"; sourceTree = "<group>"; };
+		BFBCBB941F769E90004DC835 /* WDImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImageManager.h; sourceTree = "<group>"; };
+		BFBCBB951F769E90004DC835 /* WDImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDImageManager.m; sourceTree = "<group>"; };
+		BFBCBB961F769E90004DC835 /* WDImageMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImageMaskView.h; sourceTree = "<group>"; };
+		BFBCBB971F769E90004DC835 /* WDImageMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDImageMaskView.m; sourceTree = "<group>"; };
+		BFBCBB981F769E90004DC835 /* WDSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSingleton.h; sourceTree = "<group>"; };
+		BFBCBB991F769E90004DC835 /* WDTailoringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTailoringController.h; sourceTree = "<group>"; };
+		BFBCBB9A1F769E90004DC835 /* WDTailoringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTailoringController.m; sourceTree = "<group>"; };
+		C50EDC8A1F0F7621002BBA4B /* GTSystemAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSystemAuth.h; sourceTree = "<group>"; };
+		C50EDC8B1F0F7621002BBA4B /* GTSystemAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSystemAuth.m; sourceTree = "<group>"; };
+		C50EDC901F0FB30D002BBA4B /* GTAuthInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAuthInfoModel.h; sourceTree = "<group>"; };
+		C50EDC911F0FB30D002BBA4B /* GTAuthInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAuthInfoModel.m; sourceTree = "<group>"; };
+		C50EDC961F0FB4CA002BBA4B /* GTAuthenticateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAuthenticateService.h; sourceTree = "<group>"; };
+		C50EDC971F0FB4CA002BBA4B /* GTAuthenticateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAuthenticateService.m; sourceTree = "<group>"; };
+		C50EDC991F0FB7DC002BBA4B /* GTUserAuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUserAuthModel.h; sourceTree = "<group>"; };
+		C50EDC9A1F0FB7DC002BBA4B /* GTUserAuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTUserAuthModel.m; sourceTree = "<group>"; };
+		C50EDC9C1F0FB7F0002BBA4B /* GTBankCardAuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTBankCardAuthModel.h; sourceTree = "<group>"; };
+		C50EDC9D1F0FB7F0002BBA4B /* GTBankCardAuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTBankCardAuthModel.m; sourceTree = "<group>"; };
+		C50EDC9F1F0FB7FF002BBA4B /* GTPhoneAuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTPhoneAuthModel.h; sourceTree = "<group>"; };
+		C50EDCA01F0FB7FF002BBA4B /* GTPhoneAuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTPhoneAuthModel.m; sourceTree = "<group>"; };
+		C50EDCA21F0FB815002BBA4B /* GTAlipayAuthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAlipayAuthModel.h; sourceTree = "<group>"; };
+		C50EDCA31F0FB815002BBA4B /* GTAlipayAuthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAlipayAuthModel.m; sourceTree = "<group>"; };
+		C51677781F0CB13F005337CD /* GTUploadAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUploadAddressBookViewController.h; sourceTree = "<group>"; };
+		C51677791F0CB13F005337CD /* GTUploadAddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTUploadAddressBookViewController.m; sourceTree = "<group>"; };
+		C516777B1F0CE4C9005337CD /* GTAlipaySubmitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAlipaySubmitView.h; sourceTree = "<group>"; };
+		C516777C1F0CE4C9005337CD /* GTAlipaySubmitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAlipaySubmitView.m; sourceTree = "<group>"; };
+		C53D0B111F04A86F005BFF1E /* GTIDCardAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTIDCardAuthViewController.h; sourceTree = "<group>"; };
+		C53D0B121F04A86F005BFF1E /* GTIDCardAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTIDCardAuthViewController.m; sourceTree = "<group>"; };
+		C53D0B2E1F04E447005BFF1E /* GTAuthCenterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAuthCenterCollectionViewCell.h; sourceTree = "<group>"; };
+		C53D0B2F1F04E447005BFF1E /* GTAuthCenterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAuthCenterCollectionViewCell.m; sourceTree = "<group>"; };
+		C53D0B301F04E447005BFF1E /* GTAuthCenterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAuthCenterHeaderView.h; sourceTree = "<group>"; };
+		C53D0B311F04E447005BFF1E /* GTAuthCenterHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAuthCenterHeaderView.m; sourceTree = "<group>"; };
+		C53D0B321F04E447005BFF1E /* GTAuthFailureInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAuthFailureInfoView.h; sourceTree = "<group>"; };
+		C53D0B331F04E447005BFF1E /* GTAuthFailureInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAuthFailureInfoView.m; sourceTree = "<group>"; };
+		C53D0B341F04E447005BFF1E /* GTAuthProcessingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAuthProcessingView.h; sourceTree = "<group>"; };
+		C53D0B351F04E447005BFF1E /* GTAuthProcessingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAuthProcessingView.m; sourceTree = "<group>"; };
+		C53D0B361F04E447005BFF1E /* GTAuthSuccessInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAuthSuccessInfoView.h; sourceTree = "<group>"; };
+		C53D0B371F04E447005BFF1E /* GTAuthSuccessInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAuthSuccessInfoView.m; sourceTree = "<group>"; };
+		C53D0B381F04E447005BFF1E /* GTContactUsBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTContactUsBarView.h; sourceTree = "<group>"; };
+		C53D0B391F04E447005BFF1E /* GTContactUsBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTContactUsBarView.m; sourceTree = "<group>"; };
+		C53D0B3B1F04E447005BFF1E /* GTIDCardDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTIDCardDisplayView.h; sourceTree = "<group>"; };
+		C53D0B3C1F04E447005BFF1E /* GTIDCardDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTIDCardDisplayView.m; sourceTree = "<group>"; };
+		C53D0B3F1F04E447005BFF1E /* GTIDCardSubmitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTIDCardSubmitView.h; sourceTree = "<group>"; };
+		C53D0B401F04E447005BFF1E /* GTIDCardSubmitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTIDCardSubmitView.m; sourceTree = "<group>"; };
+		C53D0B411F04E447005BFF1E /* GTIDCardSucceedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTIDCardSucceedView.h; sourceTree = "<group>"; };
+		C53D0B421F04E447005BFF1E /* GTIDCardSucceedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTIDCardSucceedView.m; sourceTree = "<group>"; };
+		C53D0B501F0517E4005BFF1E /* GTLabelTextFieldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLabelTextFieldTableViewCell.h; sourceTree = "<group>"; };
+		C53D0B511F0517E4005BFF1E /* GTLabelTextFieldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLabelTextFieldTableViewCell.m; sourceTree = "<group>"; };
+		C53D0B561F052F60005BFF1E /* GTBankCardAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTBankCardAuthViewController.h; sourceTree = "<group>"; };
+		C53D0B571F052F60005BFF1E /* GTBankCardAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTBankCardAuthViewController.m; sourceTree = "<group>"; };
+		C53D0B591F052F8B005BFF1E /* GTPhoneAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTPhoneAuthViewController.h; sourceTree = "<group>"; };
+		C53D0B5A1F052F8B005BFF1E /* GTPhoneAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTPhoneAuthViewController.m; sourceTree = "<group>"; };
+		C53D0B5C1F052F9B005BFF1E /* GTAlipayAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAlipayAuthViewController.h; sourceTree = "<group>"; };
+		C53D0B5D1F052F9B005BFF1E /* GTAlipayAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAlipayAuthViewController.m; sourceTree = "<group>"; };
+		C54349951F0E169000072E1F /* GTLabelTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLabelTextFieldView.h; sourceTree = "<group>"; };
+		C54349961F0E169000072E1F /* GTLabelTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLabelTextFieldView.m; sourceTree = "<group>"; };
+		C54585091F0351C8004C1E46 /* GTAuthCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAuthCenterViewController.h; sourceTree = "<group>"; };
+		C545850A1F0351C8004C1E46 /* GTAuthCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAuthCenterViewController.m; sourceTree = "<group>"; };
+		C54CC28B1F020A2400FF3851 /* GTMineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMineHeaderView.h; sourceTree = "<group>"; };
+		C54CC28C1F020A2400FF3851 /* GTMineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMineHeaderView.m; sourceTree = "<group>"; };
+		C54CC28E1F020AE500FF3851 /* GTMineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMineTableViewCell.h; sourceTree = "<group>"; };
+		C54CC28F1F020AE500FF3851 /* GTMineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMineTableViewCell.m; sourceTree = "<group>"; };
+		C54CC2911F0225A100FF3851 /* GTMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMineViewController.h; sourceTree = "<group>"; };
+		C54CC2921F0225A100FF3851 /* GTMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMineViewController.m; sourceTree = "<group>"; };
+		C552417E1F0A489A008ADE7D /* GTUploadAddressBookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUploadAddressBookView.h; sourceTree = "<group>"; };
+		C552417F1F0A489A008ADE7D /* GTUploadAddressBookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTUploadAddressBookView.m; sourceTree = "<group>"; };
+		C55241841F0A63A6008ADE7D /* GTBankCardCommitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTBankCardCommitViewController.h; sourceTree = "<group>"; };
+		C55241851F0A63A6008ADE7D /* GTBankCardCommitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTBankCardCommitViewController.m; sourceTree = "<group>"; };
+		C565CC291F05E6C300CCAFFE /* GTAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAboutUsViewController.h; sourceTree = "<group>"; };
+		C565CC2A1F05E6C300CCAFFE /* GTAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAboutUsViewController.m; sourceTree = "<group>"; };
+		C565CC2C1F05EBEC00CCAFFE /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		C565CC2D1F05EBEC00CCAFFE /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		C565CC2F1F05F30E00CCAFFE /* GTUserSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUserSettingsViewController.h; sourceTree = "<group>"; };
+		C565CC301F05F30E00CCAFFE /* GTUserSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTUserSettingsViewController.m; sourceTree = "<group>"; };
+		C565CC351F061E1400CCAFFE /* GTFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTFeedBackViewController.h; sourceTree = "<group>"; };
+		C565CC361F061E1400CCAFFE /* GTFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTFeedBackViewController.m; sourceTree = "<group>"; };
+		C565CC3F1F0627E100CCAFFE /* GTContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTContactUsViewController.h; sourceTree = "<group>"; };
+		C565CC401F0627E100CCAFFE /* GTContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTContactUsViewController.m; sourceTree = "<group>"; };
+		C565CC431F062C0200CCAFFE /* GTContactUsItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTContactUsItemView.h; sourceTree = "<group>"; };
+		C565CC441F062C0200CCAFFE /* GTContactUsItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTContactUsItemView.m; sourceTree = "<group>"; };
+		C565CC461F062C6000CCAFFE /* GTOnlineServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTOnlineServiceViewController.h; sourceTree = "<group>"; };
+		C565CC471F062C6000CCAFFE /* GTOnlineServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTOnlineServiceViewController.m; sourceTree = "<group>"; };
+		C565CC4C1F06714100CCAFFE /* GTBankCardSucceedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTBankCardSucceedView.h; sourceTree = "<group>"; };
+		C565CC4D1F06714100CCAFFE /* GTBankCardSucceedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTBankCardSucceedView.m; sourceTree = "<group>"; };
+		C565CC4F1F06720200CCAFFE /* GTPhoneSucceedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTPhoneSucceedView.h; sourceTree = "<group>"; };
+		C565CC501F06720200CCAFFE /* GTPhoneSucceedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTPhoneSucceedView.m; sourceTree = "<group>"; };
+		C565CC521F06721B00CCAFFE /* GTAlipaySucceedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAlipaySucceedView.h; sourceTree = "<group>"; };
+		C565CC531F06721B00CCAFFE /* GTAlipaySucceedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAlipaySucceedView.m; sourceTree = "<group>"; };
+		C58B126A1F1726A7003A8FC0 /* GTQiYuCustomerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTQiYuCustomerService.h; sourceTree = "<group>"; };
+		C58B126B1F1726A7003A8FC0 /* GTQiYuCustomerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTQiYuCustomerService.m; sourceTree = "<group>"; };
+		D95713BC0294EB52DF72FAE2 /* Pods_GoldTreasureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldTreasureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FBCDA9E1EFCC17B001FC63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9D1D981F1798B600A68756 /* CoreMotion.framework in Frameworks */,
+				0E9D1D961F17980000A68756 /* CFNetwork.framework in Frameworks */,
+				0E9D1D941F1797EF00A68756 /* CoreText.framework in Frameworks */,
+				0E9D1D921F1797E400A68756 /* QuartzCore.framework in Frameworks */,
+				0EEA10711F08C597001F56F6 /* CoreTelephony.framework in Frameworks */,
+				0EEA106F1F08C587001F56F6 /* SystemConfiguration.framework in Frameworks */,
+				0EFC86FF1F0E39B900EA278E /* libz.tbd in Frameworks */,
+				0EEA10671F08C548001F56F6 /* libc++.tbd in Frameworks */,
+				0EFC86FD1F0E39B900EA278E /* CoreLocation.framework in Frameworks */,
+				0EFC86FE1F0E39B900EA278E /* libsqlite3.tbd in Frameworks */,
+				0E9D1D901F17979F00A68756 /* AlipaySDK.framework in Frameworks */,
+				0EFC87001F0E39B900EA278E /* Security.framework in Frameworks */,
+				0EEA10751F08C5A6001F56F6 /* AVFoundation.framework in Frameworks */,
+				0E3F24461F14809E00F7D17B /* libLLPaySDK.a in Frameworks */,
+				0EEA10771F08C5B2001F56F6 /* MobileCoreServices.framework in Frameworks */,
+				0EFC86F81F0E390B00EA278E /* UserNotifications.framework in Frameworks */,
+				7FFEBF871F09F1A000C5ED51 /* libMoxieSDK.a in Frameworks */,
+				0EEA10731F08C59E001F56F6 /* AudioToolbox.framework in Frameworks */,
+				0E8695A61F09E9DF0064A7F5 /* libUubeeSuperReal.a in Frameworks */,
+				0EEA106D1F08C57E001F56F6 /* ImageIO.framework in Frameworks */,
+				0EEA106B1F08C574001F56F6 /* CoreMedia.framework in Frameworks */,
+				0EEA10691F08C564001F56F6 /* libicucore.tbd in Frameworks */,
+				0E83F83DF8240D9B260FC97B /* Pods_GoldTreasure.framework in Frameworks */,
+				7FFEBF841F09F1A000C5ED51 /* libUubeeSuperReal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBCDAB71EFCC17B001FC63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0759319BDFA9B1113725E141 /* Pods_GoldTreasureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBCDAC21EFCC17B001FC63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E82939867FDD8FDE8C15E4D /* Pods_GoldTreasureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E057C4E1F0C8948001C2F8F /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3C0711F161AB700F31D85 /* Controller */,
+				0E057C4F1F0C895F001C2F8F /* BaseView */,
+			);
+			name = BaseClass;
+			path = GTBaseClass;
+			sourceTree = "<group>";
+		};
+		0E057C4F1F0C895F001C2F8F /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3C06E1F161A6400F31D85 /* xib */,
+				0E057C521F0C89F0001C2F8F /* GTRefreshView.swift */,
+				0EB539811F15F8EF004D99EC /* GTNotiView.swift */,
+				0EBF6BDE1F20649600483292 /* GTUpdateView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		0E12D0A41F0B82B700132884 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				0E8695A51F09E9DF0064A7F5 /* libUubeeSuperReal.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		0E12D0AF1F0B853300132884 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3C0751F16217D00F31D85 /* GTNotiController.swift */,
+				0EBFEB701F15ECAA00CEBE78 /* GTPopController.swift */,
+				0E4632881F3AC23E00625E2A /* GTTransNavbar.swift */,
+				0EAA25B61F0BB34600FA0ED9 /* GTHUD.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		0E155E1B1F2350AA00601A2D /* UIConf */ = {
+			isa = PBXGroup;
+			children = (
+				0E155E1C1F23511F00601A2D /* GTColor.h */,
+				0E155E1D1F23511F00601A2D /* GTColor.m */,
+				0E155E1E1F23511F00601A2D /* GTFont.h */,
+				0E155E231F23513200601A2D /* GTFont.m */,
+				0EC9C8CF1F28944A00D92201 /* GTSize.h */,
+				0EC9C8D01F28944A00D92201 /* GTSize.m */,
+				0E155E1F1F23511F00601A2D /* GTUIDefine.h */,
+				0E155E201F23511F00601A2D /* GTUIDefine.swift */,
+			);
+			path = UIConf;
+			sourceTree = "<group>";
+		};
+		0E38CFA41F074C580072D323 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				0E61F1291F271FC800D00C81 /* MBProgressHUD */,
+				0E9D1D8C1F17975800A68756 /* AliSDK */,
+				0EF3C0771F164E4400F31D85 /* GKCover */,
+				0E3F243F1F14809E00F7D17B /* LLPaySDK */,
+				7FFEBF731F09F1A000C5ED51 /* idsafeSDK */,
+				7FFEBF7A1F09F1A000C5ED51 /* MoxieSDK */,
+				0E38CFA51F074C580072D323 /* UpYunSDK */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		0E38CFA51F074C580072D323 /* UpYunSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0E38CFA61F074C580072D323 /* class */,
+				0E38CFB21F074C580072D323 /* class_deprecated */,
+			);
+			path = UpYunSDK;
+			sourceTree = "<group>";
+		};
+		0E38CFA61F074C580072D323 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				0E38CFA71F074C580072D323 /* UpLoader */,
+				0E38CFAD1F074C580072D323 /* Utils */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		0E38CFA71F074C580072D323 /* UpLoader */ = {
+			isa = PBXGroup;
+			children = (
+				0E38CFA81F074C580072D323 /* UpYunBlockUpLoader.h */,
+				0E38CFA91F074C580072D323 /* UpYunBlockUpLoader.m */,
+				0E38CFAA1F074C580072D323 /* UpYunFormUploader.h */,
+				0E38CFAB1F074C580072D323 /* UpYunFormUploader.m */,
+				0E38CFAC1F074C580072D323 /* UpYunUploader.h */,
+			);
+			path = UpLoader;
+			sourceTree = "<group>";
+		};
+		0E38CFAD1F074C580072D323 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0E38CFAE1F074C580072D323 /* UpApiUtils.h */,
+				0E38CFAF1F074C580072D323 /* UpApiUtils.m */,
+				0E38CFB01F074C580072D323 /* UpSimpleHttpClient.h */,
+				0E38CFB11F074C580072D323 /* UpSimpleHttpClient.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0E38CFB21F074C580072D323 /* class_deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				0E38CFB31F074C580072D323 /* HttpUtils */,
+				0E38CFBA1F074C580072D323 /* NSData+MD5Digest */,
+				0E38CFBF1F074C580072D323 /* UPMutUpload */,
+				0E38CFC21F074C580072D323 /* UpYun.h */,
+				0E38CFC31F074C580072D323 /* UpYun.m */,
+				0E38CFC41F074C580072D323 /* UPYUNConfig.h */,
+				0E38CFC51F074C580072D323 /* UPYUNConfig.m */,
+			);
+			path = class_deprecated;
+			sourceTree = "<group>";
+		};
+		0E38CFB31F074C580072D323 /* HttpUtils */ = {
+			isa = PBXGroup;
+			children = (
+				0E38CFB41F074C580072D323 /* UPHTTPBodyPart.h */,
+				0E38CFB51F074C580072D323 /* UPHTTPBodyPart.m */,
+				0E38CFB61F074C580072D323 /* UPHTTPClient.h */,
+				0E38CFB71F074C580072D323 /* UPHTTPClient.m */,
+				0E38CFB81F074C580072D323 /* UPMultipartBody.h */,
+				0E38CFB91F074C580072D323 /* UPMultipartBody.m */,
+			);
+			path = HttpUtils;
+			sourceTree = "<group>";
+		};
+		0E38CFBA1F074C580072D323 /* NSData+MD5Digest */ = {
+			isa = PBXGroup;
+			children = (
+				0E38CFBB1F074C580072D323 /* NSData+MD5Digest.h */,
+				0E38CFBC1F074C580072D323 /* NSData+MD5Digest.m */,
+				0E38CFBD1F074C580072D323 /* NSString+NSHash.h */,
+				0E38CFBE1F074C580072D323 /* NSString+NSHash.m */,
+			);
+			path = "NSData+MD5Digest";
+			sourceTree = "<group>";
+		};
+		0E38CFBF1F074C580072D323 /* UPMutUpload */ = {
+			isa = PBXGroup;
+			children = (
+				0E38CFC01F074C580072D323 /* UPMutUploaderManager.h */,
+				0E38CFC11F074C580072D323 /* UPMutUploaderManager.m */,
+			);
+			path = UPMutUpload;
+			sourceTree = "<group>";
+		};
+		0E3F243F1F14809E00F7D17B /* LLPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				0E3F24401F14809E00F7D17B /* CHANGELOG.md */,
+				0E3F24411F14809E00F7D17B /* libLLPaySDK.a */,
+				0E3F24421F14809E00F7D17B /* LLPaySdk.h */,
+				0E3F24431F14809E00F7D17B /* README.md */,
+				0E3F24441F14809E00F7D17B /* walletResources.bundle */,
+			);
+			path = LLPaySDK;
+			sourceTree = "<group>";
+		};
+		0E61F1291F271FC800D00C81 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				0E61F12A1F271FC800D00C81 /* MBProgressHUD.h */,
+				0E61F12B1F271FC800D00C81 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		0E64E1AE1F01EC7400F1A903 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				0E155E1B1F2350AA00601A2D /* UIConf */,
+				0EB53FFD1F03A006001D1571 /* GTAppMacro.h */,
+				0E155E1A1F234EA100601A2D /* GTConfDefine.h */,
+				0E155E141F234A8800601A2D /* GTEnumDefine.h */,
+				0EB53FF31F0392B4001D1571 /* GTCommonDefine.h */,
+				0E61F11F1F23540A00D00C81 /* GTCommonDefine.m */,
+				0E61F1231F25A4A100D00C81 /* GTStrDefine.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		0E8695A71F0A2D180064A7F5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0E8695A81F0A2D500064A7F5 /* GTLoginService.h */,
+				0E8695A91F0A2D500064A7F5 /* GTLoginService.m */,
+				BBAF958D1F0A45F60053B08A /* GTTradeService.h */,
+				BBAF958E1F0A45F60053B08A /* GTTradeService.m */,
+				C50EDC961F0FB4CA002BBA4B /* GTAuthenticateService.h */,
+				C50EDC971F0FB4CA002BBA4B /* GTAuthenticateService.m */,
+				0E6F4F351F1067A5002E50D2 /* GTRealmService.h */,
+				0E6F4F361F1067A5002E50D2 /* GTRealmService.m */,
+				0E3F24491F14B81500F7D17B /* GTCommonService.h */,
+				0E3F244A1F14B81500F7D17B /* GTCommonService.m */,
+				C58B126A1F1726A7003A8FC0 /* GTQiYuCustomerService.h */,
+				C58B126B1F1726A7003A8FC0 /* GTQiYuCustomerService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0E9D1D8C1F17975800A68756 /* AliSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0E9D1D8D1F17979F00A68756 /* AlipaySDK.bundle */,
+				0E9D1D8E1F17979F00A68756 /* AlipaySDK.framework */,
+			);
+			path = AliSDK;
+			sourceTree = "<group>";
+		};
+		0EA785641F0259480067F4BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0E1148381F027A8000B78849 /* GTApi.h */,
+				0E1148391F027A8000B78849 /* GTApi.m */,
+				0E37EFAF1F029350000834C6 /* GTNetError.h */,
+				0E37EFB01F029350000834C6 /* GTNetError.m */,
+				0EA785671F0260280067F4BA /* GTNet.swift */,
+				0EB53FEB1F037B8D001D1571 /* GTApiCode.swift */,
+				0EB53FE81F035B74001D1571 /* GTTEST.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0EB53FED1F039143001D1571 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				0EB53FEE1F039156001D1571 /* GTUser.swift */,
+				0EEC24C91F15BE2700FA529D /* GTCheck.swift */,
+				0EB53FF61F03969C001D1571 /* GTClient.swift */,
+				0EFC87091F0F78D200EA278E /* GTNoti.swift */,
+				0EFC870B1F0F85B000EA278E /* GTDB.swift */,
+				0E3F24511F14F6D300F7D17B /* GTRouter.swift */,
+				0E3F24531F14F96E00F7D17B /* GTAdapt.h */,
+				0E3F24541F14F96E00F7D17B /* GTAdapt.m */,
+			);
+			path = Manage;
+			sourceTree = "<group>";
+		};
+		0EB53FFF1F03AB33001D1571 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0E73E7CB1F5665AF00EE6A76 /* UILable+GT.swift */,
+				0EB540061F04DD90001D1571 /* UIColor+GT.swift */,
+				0EAB3C911F3C79AD0091B76E /* UINavBar+GT.swift */,
+				0EC9C8D21F28B20B00D92201 /* NSObject+GT.swift */,
+				0ED6C6011F0CD302001E36B8 /* UIImage+GT.swift */,
+				0EB540001F03AB55001D1571 /* Int+GT.swift */,
+				0EB540041F04DD8B001D1571 /* String+GT.swift */,
+				0E1FAA151F06269700D6AB40 /* Data+GT.swift */,
+				0E4F9BCD1F31D5CF00998212 /* UIButton+GT.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0EE42AF51F012254001D7D88 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EE42B0D1F0124BF001D7D88 /* Root */,
+				0EE42AF61F012254001D7D88 /* HomePage */,
+				0EE42AF91F012254001D7D88 /* Mine */,
+				7F53ABCB1F037A5700710468 /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EE42AF61F012254001D7D88 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				0E73F82E1F0D16C200EAEC9F /* GTHomePageController.h */,
+				0E73F82F1F0D16C200EAEC9F /* GTHomePageController.m */,
+				BB0FC9BD1F1706A600E5DD98 /* PacbackEnd */,
+				BBAF957F1F07A8F50053B08A /* PersistLoan */,
+				BBAF957E1F07A82D0053B08A /* NowPayback */,
+				7FFEBF231F07702B00C5ED51 /* Borrowing */,
+				BBB13C901F05F82D0066393F /* LoanDeatail */,
+				7F53ABC11F03519800710468 /* Notification */,
+				BBD3815C1F0294940098603F /* PaybackList */,
+				BBD381581F0294860098603F /* LoanOrder */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		0EE42AF91F012254001D7D88 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C565CC3E1F0627C400CCAFFE /* ContactUs */,
+				C565CC281F05E69900CCAFFE /* UserSettings */,
+				C565CC271F05E64300CCAFFE /* AboutUs */,
+				C54585081F0351AF004C1E46 /* AuthCenter */,
+				C54CC2911F0225A100FF3851 /* GTMineViewController.h */,
+				C54CC2921F0225A100FF3851 /* GTMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		0EE42AFE1F0122B5001D7D88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB7202481F1500CB00BD2DA7 /* LLModel */,
+				C50EDC8F1F0FB2FB002BBA4B /* Auth */,
+				7FFEBFA21F0E138400C5ED51 /* Notification */,
+				0EE42B031F01236D001D7D88 /* Base */,
+				7F0C61E41F01F8AE0049B8E1 /* OrderModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0EE42AFF1F0122C8001D7D88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F53ABCF1F0381D900710468 /* Login */,
+				C54CC28A1F020A0C00FF3851 /* Mine */,
+				7F0C61E01F01F1550049B8E1 /* HomePage */,
+				0EE42B111F012603001D7D88 /* Nav */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EE42B031F01236D001D7D88 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0EE42B041F012386001D7D88 /* BaseModel.h */,
+				0EE42B051F012386001D7D88 /* BaseModel.m */,
+				0EA785691F0262B30067F4BA /* GTResModelCommon.swift */,
+				0EA7856B1F02639A0067F4BA /* GTReqModelCommon.swift */,
+				0EFC870D1F0F8C2100EA278E /* GTDBUserModel.h */,
+				0EFC870E1F0F8C2100EA278E /* GTDBUserModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0EE42B0D1F0124BF001D7D88 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0EE42B0E1F0124DA001D7D88 /* BaseTabBarViewController.h */,
+				0EE42B0F1F0124DA001D7D88 /* BaseTabBarViewController.m */,
+				7F53ABC51F03560200710468 /* GTBaseViewController.h */,
+				7F53ABC61F03560200710468 /* GTBaseViewController.m */,
+				0ED837F31F0738A100119191 /* GTRootUINavigationController.h */,
+				0ED837F41F0738A100119191 /* GTRootUINavigationController.m */,
+				0E14641C1F0CACC80010AF99 /* GTRootTabbarVC.swift */,
+				0E14641E1F0CAF920010AF99 /* GTRootNavVC.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0EE42B111F012603001D7D88 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				0EE42B151F012620001D7D88 /* RightButton.h */,
+				0EE42B161F012620001D7D88 /* RightButton.m */,
+				0EE42B121F012617001D7D88 /* ReturnBack.h */,
+				0EE42B131F012617001D7D88 /* ReturnBack.m */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		0EE42B181F012746001D7D88 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0E057C4E1F0C8948001C2F8F /* BaseClass */,
+				0E12D0AF1F0B853300132884 /* Widget */,
+				0EEA10B71F08D20A001F56F6 /* Test */,
+				0E38CFA41F074C580072D323 /* Vender */,
+				0EB53FFF1F03AB33001D1571 /* Extension */,
+				0EB53FED1F039143001D1571 /* Manage */,
+				0EA785641F0259480067F4BA /* Network */,
+				0E64E1AE1F01EC7400F1A903 /* Define */,
+				0EE42B251F012771001D7D88 /* Category */,
+				0EE42B1D1F012746001D7D88 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0EE42B1D1F012746001D7D88 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BFBCBB911F769E90004DC835 /* ImagePicker */,
+				C50EDC891F0F75FD002BBA4B /* SystemAuth */,
+				7FFEBF1E1F074A3300C5ED51 /* ShowMessage */,
+				0EE42B1F1F012746001D7D88 /* TimeTools */,
+				0EB540081F0521B1001D1571 /* GTSecUtils.swift */,
+				0E6F4F381F10CEE3002E50D2 /* GTVerification.h */,
+				0E6F4F391F10CEE3002E50D2 /* GTVerification.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0EE42B1F1F012746001D7D88 /* TimeTools */ = {
+			isa = PBXGroup;
+			children = (
+				0EE42B201F012746001D7D88 /* TimeTools.h */,
+				0EE42B211F012746001D7D88 /* TimeTools.m */,
+			);
+			path = TimeTools;
+			sourceTree = "<group>";
+		};
+		0EE42B251F012771001D7D88 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0E451CA41F1CE9E500B026BA /* UIBarButtonItem+GT.h */,
+				0E451CA51F1CE9E500B026BA /* UIBarButtonItem+GT.m */,
+				0E73F8251F0CD98A00EAEC9F /* UIImage+Extension.h */,
+				0E73F8261F0CD98A00EAEC9F /* UIImage+Extension.m */,
+				0E73F8281F0CDBFF00EAEC9F /* NSObject+GT.h */,
+				0E73F8291F0CDBFF00EAEC9F /* NSObject+GT.m */,
+				0E8B78731F0B447B007CE34B /* NSString+Additions.h */,
+				0E8B78741F0B447B007CE34B /* NSString+Additions.m */,
+				0E8695AE1F0B39030064A7F5 /* NSDictionary+Extension.h */,
+				0E8695AF1F0B39030064A7F5 /* NSDictionary+Extension.m */,
+				0EE42B261F012771001D7D88 /* NSString+TelNumber.h */,
+				0EE42B271F012771001D7D88 /* NSString+TelNumber.m */,
+				0EE42B281F012771001D7D88 /* UIView+Extension.h */,
+				0EE42B291F012771001D7D88 /* UIView+Extension.m */,
+				7F0C61E81F022C4E0049B8E1 /* UIButton+GTImageTitleSpacing.h */,
+				7F0C61E91F022C4E0049B8E1 /* UIButton+GTImageTitleSpacing.m */,
+				C565CC2C1F05EBEC00CCAFFE /* UILabel+Extension.h */,
+				C565CC2D1F05EBEC00CCAFFE /* UILabel+Extension.m */,
+				0E73F82B1F0CFF6600EAEC9F /* NSNumber+GT.h */,
+				0E73F82C1F0CFF6600EAEC9F /* NSNumber+GT.m */,
+				BB8A920A1F1F52B300494448 /* NSDate+Custom.h */,
+				BB8A920B1F1F52B300494448 /* NSDate+Custom.m */,
+				0EAB3C931F3D3A310091B76E /* UIViewController+GT.h */,
+				0EAB3C941F3D3A310091B76E /* UIViewController+GT.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0EE42B2C1F01283B001D7D88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBDC65F11F0E36B600AB1B0A /* Assets.xcassets */,
+				7FBCDAA51EFCC17B001FC63B /* main.m */,
+				7FBCDAB21EFCC17B001FC63B /* LaunchScreen.storyboard */,
+				0EE42B2D1F01283B001D7D88 /* Info.plist */,
+				0EE42B2E1F01283B001D7D88 /* PrefixHeader.pch */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		0EEA10B71F08D20A001F56F6 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0EEA10B81F08D214001F56F6 /* TViewController.swift */,
+				0EEA10BB1F08D253001F56F6 /* TViewController.xib */,
+				0EEA10CD1F08E1F9001F56F6 /* TAuthViewController.swift */,
+				0EEA10CE1F08E1F9001F56F6 /* TAuthViewController.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		0EF3C06E1F161A6400F31D85 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3C06F1F161A7600F31D85 /* GTNotiView.xib */,
+				0EBF6BDC1F205F3100483292 /* GTUpdateView.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		0EF3C0711F161AB700F31D85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E9D1D8A1F17737600A68756 /* GTGuiderImgVC.swift */,
+				0E5916401F18E92F00FA292C /* GTWKWebVC.swift */,
+				0E4102011F343B6100EBCAA0 /* GTDefaultController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EF3C0771F164E4400F31D85 /* GKCover */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3C0781F164E4400F31D85 /* Category */,
+				0EF3C07B1F164E4400F31D85 /* GKCover.h */,
+				0EF3C07C1F164E4400F31D85 /* GKCover.m */,
+				0EF3C07D1F164E4400F31D85 /* GKCoverEnum.h */,
+				0EF3C07E1F164E4400F31D85 /* Resource */,
+			);
+			path = GKCover;
+			sourceTree = "<group>";
+		};
+		0EF3C0781F164E4400F31D85 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3C0791F164E4400F31D85 /* UIView+GKExtension.h */,
+				0EF3C07A1F164E4400F31D85 /* UIView+GKExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0EF3C07E1F164E4400F31D85 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3C07F1F164E4400F31D85 /* transparent_bg.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2530A3D434DDB98101665220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E9D1D971F1798B600A68756 /* CoreMotion.framework */,
+				0E9D1D951F17980000A68756 /* CFNetwork.framework */,
+				0E9D1D931F1797EF00A68756 /* CoreText.framework */,
+				0E9D1D911F1797E400A68756 /* QuartzCore.framework */,
+				0EFC86F91F0E39B900EA278E /* CoreLocation.framework */,
+				0EFC86FA1F0E39B900EA278E /* libsqlite3.tbd */,
+				0EFC86FB1F0E39B900EA278E /* libz.tbd */,
+				0EFC86FC1F0E39B900EA278E /* Security.framework */,
+				0EFC86F71F0E390B00EA278E /* UserNotifications.framework */,
+				0EEA10761F08C5B2001F56F6 /* MobileCoreServices.framework */,
+				0EEA10741F08C5A6001F56F6 /* AVFoundation.framework */,
+				0EEA10721F08C59E001F56F6 /* AudioToolbox.framework */,
+				0EEA10701F08C597001F56F6 /* CoreTelephony.framework */,
+				0EEA106E1F08C587001F56F6 /* SystemConfiguration.framework */,
+				0EEA106C1F08C57E001F56F6 /* ImageIO.framework */,
+				0EEA106A1F08C574001F56F6 /* CoreMedia.framework */,
+				0EEA10681F08C564001F56F6 /* libicucore.tbd */,
+				0EEA10661F08C548001F56F6 /* libc++.tbd */,
+				5A95C40FD3981BBCED9FA19A /* Pods_GoldTreasure.framework */,
+				A3A30CA97C972643A3324B1A /* Pods_GoldTreasureTests.framework */,
+				D95713BC0294EB52DF72FAE2 /* Pods_GoldTreasureUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CB2C776C58652505392FE2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7926A36A929659707E402A95 /* Pods-GoldTreasure.debug.xcconfig */,
+				7F5E5DB63C1C7EAA067D0D6C /* Pods-GoldTreasure.release.xcconfig */,
+				00FA4937D417AB538E225A56 /* Pods-GoldTreasureTests.debug.xcconfig */,
+				AA5D0A8345FFEB155148D0EF /* Pods-GoldTreasureTests.release.xcconfig */,
+				88C695786817498637BC7B19 /* Pods-GoldTreasureUITests.debug.xcconfig */,
+				A73BC5405791685111B0863E /* Pods-GoldTreasureUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F0C61E01F01F1550049B8E1 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF9E1F0E06DC00C5ED51 /* Notification */,
+				7FFEBF271F0773C500C5ED51 /* Borrowing */,
+				BBB13C991F066F2F0066393F /* LoanDetailSummary */,
+				BB328EA01F0357320021750A /* PaybackHeader */,
+				BBD381541F0293A10098603F /* LoanOderCell */,
+				BBD381501F0293920098603F /* PaybackCell */,
+				7F0C61EE1F0253670049B8E1 /* SDCycleScrollView */,
+				7F0C61E11F01F1840049B8E1 /* HomePageHeadView.h */,
+				7F0C61E21F01F1840049B8E1 /* HomePageHeadView.m */,
+				7F0C61EB1F0252D50049B8E1 /* GTFlexSliderCell.h */,
+				7F0C61EC1F0252D50049B8E1 /* GTFlexSliderCell.m */,
+				7F53ABBE1F0257AB00710468 /* GTNormalCell.h */,
+				7F53ABBF1F0257AB00710468 /* GTNormalCell.m */,
+			);
+			name = HomePage;
+			path = HomePageHeadView;
+			sourceTree = "<group>";
+		};
+		7F0C61E41F01F8AE0049B8E1 /* OrderModel */ = {
+			isa = PBXGroup;
+			children = (
+				7F0C61E51F01F8CC0049B8E1 /* OrderModel.h */,
+				7F0C61E61F01F8CC0049B8E1 /* OrderModel.m */,
+			);
+			path = OrderModel;
+			sourceTree = "<group>";
+		};
+		7F0C61EE1F0253670049B8E1 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				7F0C61EF1F0253670049B8E1 /* PageControl */,
+				7F0C61F81F0253670049B8E1 /* SDCollectionViewCell.h */,
+				7F0C61F91F0253670049B8E1 /* SDCollectionViewCell.m */,
+				7F0C61FA1F0253670049B8E1 /* SDCycleScrollView.h */,
+				7F0C61FB1F0253670049B8E1 /* SDCycleScrollView.m */,
+				7F0C61FC1F0253670049B8E1 /* UIView+SDExtension.h */,
+				7F0C61FD1F0253670049B8E1 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		7F0C61EF1F0253670049B8E1 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				7F0C61F01F0253670049B8E1 /* TAAbstractDotView.h */,
+				7F0C61F11F0253670049B8E1 /* TAAbstractDotView.m */,
+				7F0C61F21F0253670049B8E1 /* TAAnimatedDotView.h */,
+				7F0C61F31F0253670049B8E1 /* TAAnimatedDotView.m */,
+				7F0C61F41F0253670049B8E1 /* TADotView.h */,
+				7F0C61F51F0253670049B8E1 /* TADotView.m */,
+				7F0C61F61F0253670049B8E1 /* TAPageControl.h */,
+				BBD3814E1F0292350098603F /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		7F53ABC11F03519800710468 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7F53ABC81F0356D700710468 /* GTNotificationController.h */,
+				7F53ABC91F0356D700710468 /* GTNotificationController.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		7F53ABCB1F037A5700710468 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7F53ABCC1F037AA100710468 /* GTLoginController.h */,
+				7F53ABCD1F037AA100710468 /* GTLoginController.m */,
+				7FFEBF0F1F04965100C5ED51 /* GTRegisterController.h */,
+				7FFEBF101F04965100C5ED51 /* GTRegisterController.m */,
+				7FE568CF1F1F4FF5006F03F6 /* GTUserAgreementController.h */,
+				7FE568D01F1F4FF5006F03F6 /* GTUserAgreementController.m */,
+				7FFEBF181F04DA6800C5ED51 /* GTForgetPasswordController.h */,
+				7FFEBF191F04DA6800C5ED51 /* GTForgetPasswordController.m */,
+				0EFC87071F0F62F600EA278E /* GTLoginRoot.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7F53ABCF1F0381D900710468 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7F53ABD01F03823000710468 /* GTLoginView.h */,
+				7F53ABD11F03823000710468 /* GTLoginView.m */,
+				7FFEBF1B1F04DCDB00C5ED51 /* GTForgetPasswordCell.h */,
+				7FFEBF1C1F04DCDB00C5ED51 /* GTForgetPasswordCell.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7F55FF4D1F1DD435002E90A6 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				7F55FF4E1F1DD465002E90A6 /* GTValuePickerView.h */,
+				7F55FF4F1F1DD465002E90A6 /* GTValuePickerView.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		7FBCDA981EFCC17B001FC63B = {
+			isa = PBXGroup;
+			children = (
+				7FBCDAA31EFCC17B001FC63B /* GoldTreasure */,
+				7FBCDABD1EFCC17B001FC63B /* GoldTreasureTests */,
+				7FBCDAC81EFCC17B001FC63B /* GoldTreasureUITests */,
+				7FBCDAA21EFCC17B001FC63B /* Products */,
+				6CB2C776C58652505392FE2B /* Pods */,
+				2530A3D434DDB98101665220 /* Frameworks */,
+				0E12D0A41F0B82B700132884 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		7FBCDAA21EFCC17B001FC63B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FBCDAA11EFCC17B001FC63B /* GoldTreasure.app */,
+				7FBCDABA1EFCC17B001FC63B /* GoldTreasureTests.xctest */,
+				7FBCDAC51EFCC17B001FC63B /* GoldTreasureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FBCDAA31EFCC17B001FC63B /* GoldTreasure */ = {
+			isa = PBXGroup;
+			children = (
+				7FBCDAA71EFCC17B001FC63B /* AppDelegate.h */,
+				7FBCDAA81EFCC17B001FC63B /* AppDelegate.m */,
+				0E64E1B81F01EC9800F1A903 /* GoldTreasure-Bridging-Header.h */,
+				0EFC87031F0E3C9900EA278E /* GoldTreasure.entitlements */,
+				0EE42B181F012746001D7D88 /* Common */,
+				0EE42AF51F012254001D7D88 /* Controller */,
+				0E8695A71F0A2D180064A7F5 /* Service */,
+				0EE42AFF1F0122C8001D7D88 /* View */,
+				0EE42AFE1F0122B5001D7D88 /* Model */,
+				0EE42B2C1F01283B001D7D88 /* Support Files */,
+			);
+			path = GoldTreasure;
+			sourceTree = "<group>";
+		};
+		7FBCDABD1EFCC17B001FC63B /* GoldTreasureTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FBCDABE1EFCC17B001FC63B /* GoldTreasureTests.m */,
+				7FBCDAC01EFCC17B001FC63B /* Info.plist */,
+			);
+			path = GoldTreasureTests;
+			sourceTree = "<group>";
+		};
+		7FBCDAC81EFCC17B001FC63B /* GoldTreasureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7FBCDAC91EFCC17B001FC63B /* GoldTreasureUITests.m */,
+				7FBCDACB1EFCC17B001FC63B /* Info.plist */,
+			);
+			path = GoldTreasureUITests;
+			sourceTree = "<group>";
+		};
+		7FD97F031F1755D700880CDC /* SelectAmount */ = {
+			isa = PBXGroup;
+			children = (
+				7FD97F041F1755D700880CDC /* ScrollPickerView.h */,
+				7FD97F051F1755D700880CDC /* ScrollPickerView.m */,
+			);
+			path = SelectAmount;
+			sourceTree = "<group>";
+		};
+		7FFEBF1E1F074A3300C5ED51 /* ShowMessage */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF1F1F074A5C00C5ED51 /* GTShowMessage.h */,
+				7FFEBF201F074A5C00C5ED51 /* GTShowMessage.m */,
+			);
+			path = ShowMessage;
+			sourceTree = "<group>";
+		};
+		7FFEBF231F07702B00C5ED51 /* Borrowing */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF241F0770EC00C5ED51 /* GTContactsController.h */,
+				7FFEBF251F0770EC00C5ED51 /* GTContactsController.m */,
+				7FFEBF701F09E55100C5ED51 /* GTAmountController.h */,
+				7FFEBF711F09E55100C5ED51 /* GTAmountController.m */,
+				7FFEBF921F0B231900C5ED51 /* GTTripartiteContractController.h */,
+				7FFEBF931F0B231900C5ED51 /* GTTripartiteContractController.m */,
+				7FFEBF9B1F0CD51100C5ED51 /* GTSubmittedSuccessfullyController.h */,
+				7FFEBF9C1F0CD51100C5ED51 /* GTSubmittedSuccessfullyController.m */,
+			);
+			path = Borrowing;
+			sourceTree = "<group>";
+		};
+		7FFEBF271F0773C500C5ED51 /* Borrowing */ = {
+			isa = PBXGroup;
+			children = (
+				7F55FF4D1F1DD435002E90A6 /* PickerView */,
+				7FD97F031F1755D700880CDC /* SelectAmount */,
+				7FFEBF281F0773E700C5ED51 /* GTContactsCell.h */,
+				7FFEBF291F0773E700C5ED51 /* GTContactsCell.m */,
+				7FFEBF6D1F07976000C5ED51 /* GTContactsTitleCell.h */,
+				7FFEBF6E1F07976000C5ED51 /* GTContactsTitleCell.m */,
+				7FFEBF8C1F0A206800C5ED51 /* GTSelectAmountCell.h */,
+				7FFEBF8D1F0A206800C5ED51 /* GTSelectAmountCell.m */,
+				7FFEBF8F1F0A2A0000C5ED51 /* GTAmountNormalCell.h */,
+				7FFEBF901F0A2A0000C5ED51 /* GTAmountNormalCell.m */,
+				7FFEBF951F0BC02400C5ED51 /* GTSignatureView.h */,
+				7FFEBF961F0BC02400C5ED51 /* GTSignatureView.m */,
+				7FFEBF981F0C879500C5ED51 /* GTShowSignature.h */,
+				7FFEBF991F0C879500C5ED51 /* GTShowSignature.m */,
+			);
+			path = Borrowing;
+			sourceTree = "<group>";
+		};
+		7FFEBF731F09F1A000C5ED51 /* idsafeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF741F09F1A000C5ED51 /* libUubeeSuperReal.a */,
+				7FFEBF761F09F1A000C5ED51 /* Resource.bundle */,
+				7FFEBF771F09F1A000C5ED51 /* UDIDSafeAuthEngine.h */,
+				7FFEBF781F09F1A000C5ED51 /* UDIDSafeDataDefine.h */,
+				7FFEBF791F09F1A000C5ED51 /* UDIDSafeOCREngine.h */,
+			);
+			path = idsafeSDK;
+			sourceTree = "<group>";
+		};
+		7FFEBF7A1F09F1A000C5ED51 /* MoxieSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF7B1F09F1A000C5ED51 /* include */,
+				7FFEBF7E1F09F1A000C5ED51 /* libMoxieSDK.a */,
+				7FFEBF7F1F09F1A000C5ED51 /* resources */,
+			);
+			path = MoxieSDK;
+			sourceTree = "<group>";
+		};
+		7FFEBF7B1F09F1A000C5ED51 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF7C1F09F1A000C5ED51 /* MoxieSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		7FFEBF7C1F09F1A000C5ED51 /* MoxieSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF7D1F09F1A000C5ED51 /* MoxieSDK.h */,
+			);
+			path = MoxieSDK;
+			sourceTree = "<group>";
+		};
+		7FFEBF7F1F09F1A000C5ED51 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF801F09F1A000C5ED51 /* mx_back@2x.png */,
+				7FFEBF811F09F1A000C5ED51 /* mx_finish@2x.png */,
+				7FFEBF821F09F1A000C5ED51 /* mx_loading@2x.png */,
+				7FFEBF831F09F1A000C5ED51 /* mx_refresh@2x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		7FFEBF9E1F0E06DC00C5ED51 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBF9F1F0E071100C5ED51 /* GTNotificationCell.h */,
+				7FFEBFA01F0E071100C5ED51 /* GTNotificationCell.m */,
+				7FFEBFA61F0E5E8800C5ED51 /* GTNotificationNormalCell.h */,
+				7FFEBFA71F0E5E8800C5ED51 /* GTNotificationNormalCell.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		7FFEBFA21F0E138400C5ED51 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7FFEBFA31F0E13A800C5ED51 /* GTNotificationModel.h */,
+				7FFEBFA41F0E13A800C5ED51 /* GTNotificationModel.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		BB0FC9BD1F1706A600E5DD98 /* PacbackEnd */ = {
+			isa = PBXGroup;
+			children = (
+				BB0FC9BE1F17072400E5DD98 /* PaybackEndViewController.h */,
+				BB0FC9BF1F17072400E5DD98 /* PaybackEndViewController.m */,
+			);
+			name = PacbackEnd;
+			sourceTree = "<group>";
+		};
+		BB328EA01F0357320021750A /* PaybackHeader */ = {
+			isa = PBXGroup;
+			children = (
+				BB328EA11F0357650021750A /* PaybackHeaderView.h */,
+				BB328EA21F0357650021750A /* PaybackHeaderView.m */,
+			);
+			name = PaybackHeader;
+			sourceTree = "<group>";
+		};
+		BB7202481F1500CB00BD2DA7 /* LLModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB7202491F1500CB00BD2DA7 /* LLOrder.h */,
+				BB72024A1F1500CB00BD2DA7 /* LLOrder.m */,
+			);
+			path = LLModel;
+			sourceTree = "<group>";
+		};
+		BBAF957E1F07A82D0053B08A /* NowPayback */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF95831F07A9850053B08A /* NowPaybackViewController.h */,
+				BBAF95841F07A9850053B08A /* NowPaybackViewController.m */,
+			);
+			name = NowPayback;
+			sourceTree = "<group>";
+		};
+		BBAF957F1F07A8F50053B08A /* PersistLoan */ = {
+			isa = PBXGroup;
+			children = (
+				BBAF95801F07A9640053B08A /* PersistLoanViewController.h */,
+				BBAF95811F07A9640053B08A /* PersistLoanViewController.m */,
+			);
+			name = PersistLoan;
+			sourceTree = "<group>";
+		};
+		BBB13C901F05F82D0066393F /* LoanDeatail */ = {
+			isa = PBXGroup;
+			children = (
+				BBB13C911F05F8730066393F /* LoanDetailViewController.h */,
+				BBB13C921F05F8730066393F /* LoanDetailViewController.m */,
+			);
+			name = LoanDeatail;
+			sourceTree = "<group>";
+		};
+		BBB13C951F05FD670066393F /* LoanDetailHeader */ = {
+			isa = PBXGroup;
+			children = (
+				BBB13C961F05FDE60066393F /* LoanDeatialHeadrView.h */,
+				BBB13C971F05FDE60066393F /* LoanDeatialHeadrView.m */,
+			);
+			name = LoanDetailHeader;
+			sourceTree = "<group>";
+		};
+		BBB13C991F066F2F0066393F /* LoanDetailSummary */ = {
+			isa = PBXGroup;
+			children = (
+				BBB13CA61F0748ED0066393F /* FeeSummaryFooter */,
+				BBB13C9B1F066FBB0066393F /* LateFeeCell */,
+				BBB13C9A1F066F560066393F /* LateFeeHeader */,
+				BBB13C951F05FD670066393F /* LoanDetailHeader */,
+			);
+			name = LoanDetailSummary;
+			sourceTree = "<group>";
+		};
+		BBB13C9A1F066F560066393F /* LateFeeHeader */ = {
+			isa = PBXGroup;
+			children = (
+				BBB13C9F1F0671F70066393F /* LateFeeHeaderCell.h */,
+				BBB13CA01F0671F70066393F /* LateFeeHeaderCell.m */,
+			);
+			name = LateFeeHeader;
+			sourceTree = "<group>";
+		};
+		BBB13C9B1F066FBB0066393F /* LateFeeCell */ = {
+			isa = PBXGroup;
+			children = (
+				BBB13C9C1F0671B60066393F /* LateFeeCell.h */,
+				BBB13C9D1F0671B60066393F /* LateFeeCell.m */,
+			);
+			name = LateFeeCell;
+			sourceTree = "<group>";
+		};
+		BBB13CA61F0748ED0066393F /* FeeSummaryFooter */ = {
+			isa = PBXGroup;
+			children = (
+				BBB13CA71F07495A0066393F /* feeSummaryFooterView.h */,
+				BBB13CA81F07495A0066393F /* feeSummaryFooterView.m */,
+			);
+			name = FeeSummaryFooter;
+			sourceTree = "<group>";
+		};
+		BBD381501F0293920098603F /* PaybackCell */ = {
+			isa = PBXGroup;
+			children = (
+				BBD381511F0293920098603F /* PaybackView.h */,
+				BBD381521F0293920098603F /* PaybackView.m */,
+				BBAF95871F09D5CF0053B08A /* NowPaybackCell.h */,
+				BBAF95881F09D5CF0053B08A /* NowPaybackCell.m */,
+				BBAF958A1F0A30050053B08A /* PaybackWayCell.h */,
+				BBAF958B1F0A30050053B08A /* PaybackWayCell.m */,
+			);
+			path = PaybackCell;
+			sourceTree = "<group>";
+		};
+		BBD381541F0293A10098603F /* LoanOderCell */ = {
+			isa = PBXGroup;
+			children = (
+				BBD381551F0293A10098603F /* GTTableViewCell.h */,
+				BBD381561F0293A10098603F /* GTTableViewCell.m */,
+			);
+			path = LoanOderCell;
+			sourceTree = "<group>";
+		};
+		BBD381581F0294860098603F /* LoanOrder */ = {
+			isa = PBXGroup;
+			children = (
+				BBD381591F0294860098603F /* GTLoanOrderViewController.h */,
+				BBD3815A1F0294860098603F /* GTLoanOrderViewController.m */,
+			);
+			path = LoanOrder;
+			sourceTree = "<group>";
+		};
+		BBD3815C1F0294940098603F /* PaybackList */ = {
+			isa = PBXGroup;
+			children = (
+				BBD3815D1F0294940098603F /* PaybackViewController.h */,
+				BBD3815E1F0294940098603F /* PaybackViewController.m */,
+			);
+			name = PaybackList;
+			path = Payback;
+			sourceTree = "<group>";
+		};
+		BFBCBB911F769E90004DC835 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				BFBCBB921F769E90004DC835 /* UIImage+WDCrop.h */,
+				BFBCBB931F769E90004DC835 /* UIImage+WDCrop.m */,
+				BFBCBB941F769E90004DC835 /* WDImageManager.h */,
+				BFBCBB951F769E90004DC835 /* WDImageManager.m */,
+				BFBCBB961F769E90004DC835 /* WDImageMaskView.h */,
+				BFBCBB971F769E90004DC835 /* WDImageMaskView.m */,
+				BFBCBB981F769E90004DC835 /* WDSingleton.h */,
+				BFBCBB991F769E90004DC835 /* WDTailoringController.h */,
+				BFBCBB9A1F769E90004DC835 /* WDTailoringController.m */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		C50EDC891F0F75FD002BBA4B /* SystemAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C50EDC8A1F0F7621002BBA4B /* GTSystemAuth.h */,
+				C50EDC8B1F0F7621002BBA4B /* GTSystemAuth.m */,
+			);
+			path = SystemAuth;
+			sourceTree = "<group>";
+		};
+		C50EDC8F1F0FB2FB002BBA4B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C50EDC901F0FB30D002BBA4B /* GTAuthInfoModel.h */,
+				C50EDC911F0FB30D002BBA4B /* GTAuthInfoModel.m */,
+				C50EDC991F0FB7DC002BBA4B /* GTUserAuthModel.h */,
+				C50EDC9A1F0FB7DC002BBA4B /* GTUserAuthModel.m */,
+				C50EDC9C1F0FB7F0002BBA4B /* GTBankCardAuthModel.h */,
+				C50EDC9D1F0FB7F0002BBA4B /* GTBankCardAuthModel.m */,
+				C50EDC9F1F0FB7FF002BBA4B /* GTPhoneAuthModel.h */,
+				C50EDCA01F0FB7FF002BBA4B /* GTPhoneAuthModel.m */,
+				C50EDCA21F0FB815002BBA4B /* GTAlipayAuthModel.h */,
+				C50EDCA31F0FB815002BBA4B /* GTAlipayAuthModel.m */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C53D0B2D1F04E447005BFF1E /* AuthCenter */ = {
+			isa = PBXGroup;
+			children = (
+				C53D0B2E1F04E447005BFF1E /* GTAuthCenterCollectionViewCell.h */,
+				C53D0B2F1F04E447005BFF1E /* GTAuthCenterCollectionViewCell.m */,
+				C53D0B301F04E447005BFF1E /* GTAuthCenterHeaderView.h */,
+				C53D0B311F04E447005BFF1E /* GTAuthCenterHeaderView.m */,
+				C53D0B321F04E447005BFF1E /* GTAuthFailureInfoView.h */,
+				C53D0B331F04E447005BFF1E /* GTAuthFailureInfoView.m */,
+				C53D0B341F04E447005BFF1E /* GTAuthProcessingView.h */,
+				C53D0B351F04E447005BFF1E /* GTAuthProcessingView.m */,
+				C53D0B361F04E447005BFF1E /* GTAuthSuccessInfoView.h */,
+				C53D0B371F04E447005BFF1E /* GTAuthSuccessInfoView.m */,
+				C53D0B381F04E447005BFF1E /* GTContactUsBarView.h */,
+				C53D0B391F04E447005BFF1E /* GTContactUsBarView.m */,
+				C565CC4B1F0670E100CCAFFE /* AlipayAuth */,
+				C565CC4A1F0670D000CCAFFE /* PhoneAuth */,
+				C565CC491F0670B600CCAFFE /* BankcardAuth */,
+				C53D0B3A1F04E447005BFF1E /* IDcardAuth */,
+			);
+			path = AuthCenter;
+			sourceTree = "<group>";
+		};
+		C53D0B3A1F04E447005BFF1E /* IDcardAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C53D0B3B1F04E447005BFF1E /* GTIDCardDisplayView.h */,
+				C53D0B3C1F04E447005BFF1E /* GTIDCardDisplayView.m */,
+				C53D0B3F1F04E447005BFF1E /* GTIDCardSubmitView.h */,
+				C53D0B401F04E447005BFF1E /* GTIDCardSubmitView.m */,
+				C53D0B411F04E447005BFF1E /* GTIDCardSucceedView.h */,
+				C53D0B421F04E447005BFF1E /* GTIDCardSucceedView.m */,
+			);
+			path = IDcardAuth;
+			sourceTree = "<group>";
+		};
+		C53D0B531F052EE2005BFF1E /* BankcardAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C53D0B561F052F60005BFF1E /* GTBankCardAuthViewController.h */,
+				C53D0B571F052F60005BFF1E /* GTBankCardAuthViewController.m */,
+				C55241841F0A63A6008ADE7D /* GTBankCardCommitViewController.h */,
+				C55241851F0A63A6008ADE7D /* GTBankCardCommitViewController.m */,
+			);
+			path = BankcardAuth;
+			sourceTree = "<group>";
+		};
+		C53D0B541F052F1C005BFF1E /* PhoneAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C53D0B591F052F8B005BFF1E /* GTPhoneAuthViewController.h */,
+				C53D0B5A1F052F8B005BFF1E /* GTPhoneAuthViewController.m */,
+				C51677781F0CB13F005337CD /* GTUploadAddressBookViewController.h */,
+				C51677791F0CB13F005337CD /* GTUploadAddressBookViewController.m */,
+			);
+			path = PhoneAuth;
+			sourceTree = "<group>";
+		};
+		C53D0B551F052F33005BFF1E /* AlipayAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C53D0B5C1F052F9B005BFF1E /* GTAlipayAuthViewController.h */,
+				C53D0B5D1F052F9B005BFF1E /* GTAlipayAuthViewController.m */,
+			);
+			path = AlipayAuth;
+			sourceTree = "<group>";
+		};
+		C54585081F0351AF004C1E46 /* AuthCenter */ = {
+			isa = PBXGroup;
+			children = (
+				C53D0B551F052F33005BFF1E /* AlipayAuth */,
+				C53D0B541F052F1C005BFF1E /* PhoneAuth */,
+				C53D0B531F052EE2005BFF1E /* BankcardAuth */,
+				C54585171F03A388004C1E46 /* IDcardAuth */,
+				C54585091F0351C8004C1E46 /* GTAuthCenterViewController.h */,
+				C545850A1F0351C8004C1E46 /* GTAuthCenterViewController.m */,
+			);
+			path = AuthCenter;
+			sourceTree = "<group>";
+		};
+		C54585171F03A388004C1E46 /* IDcardAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C53D0B111F04A86F005BFF1E /* GTIDCardAuthViewController.h */,
+				C53D0B121F04A86F005BFF1E /* GTIDCardAuthViewController.m */,
+			);
+			path = IDcardAuth;
+			sourceTree = "<group>";
+		};
+		C54CC28A1F020A0C00FF3851 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C565CC421F062B8200CCAFFE /* ContactUs */,
+				C53D0B2D1F04E447005BFF1E /* AuthCenter */,
+				C54CC28B1F020A2400FF3851 /* GTMineHeaderView.h */,
+				C54CC28C1F020A2400FF3851 /* GTMineHeaderView.m */,
+				C54CC28E1F020AE500FF3851 /* GTMineTableViewCell.h */,
+				C54CC28F1F020AE500FF3851 /* GTMineTableViewCell.m */,
+				C53D0B501F0517E4005BFF1E /* GTLabelTextFieldTableViewCell.h */,
+				C53D0B511F0517E4005BFF1E /* GTLabelTextFieldTableViewCell.m */,
+				C54349951F0E169000072E1F /* GTLabelTextFieldView.h */,
+				C54349961F0E169000072E1F /* GTLabelTextFieldView.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C565CC271F05E64300CCAFFE /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				C565CC291F05E6C300CCAFFE /* GTAboutUsViewController.h */,
+				C565CC2A1F05E6C300CCAFFE /* GTAboutUsViewController.m */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		C565CC281F05E69900CCAFFE /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				C565CC2F1F05F30E00CCAFFE /* GTUserSettingsViewController.h */,
+				C565CC301F05F30E00CCAFFE /* GTUserSettingsViewController.m */,
+				C565CC351F061E1400CCAFFE /* GTFeedBackViewController.h */,
+				C565CC361F061E1400CCAFFE /* GTFeedBackViewController.m */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		C565CC3E1F0627C400CCAFFE /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				C565CC3F1F0627E100CCAFFE /* GTContactUsViewController.h */,
+				C565CC401F0627E100CCAFFE /* GTContactUsViewController.m */,
+				C565CC461F062C6000CCAFFE /* GTOnlineServiceViewController.h */,
+				C565CC471F062C6000CCAFFE /* GTOnlineServiceViewController.m */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		C565CC421F062B8200CCAFFE /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				C565CC431F062C0200CCAFFE /* GTContactUsItemView.h */,
+				C565CC441F062C0200CCAFFE /* GTContactUsItemView.m */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		C565CC491F0670B600CCAFFE /* BankcardAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C565CC4C1F06714100CCAFFE /* GTBankCardSucceedView.h */,
+				C565CC4D1F06714100CCAFFE /* GTBankCardSucceedView.m */,
+			);
+			path = BankcardAuth;
+			sourceTree = "<group>";
+		};
+		C565CC4A1F0670D000CCAFFE /* PhoneAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C552417E1F0A489A008ADE7D /* GTUploadAddressBookView.h */,
+				C552417F1F0A489A008ADE7D /* GTUploadAddressBookView.m */,
+				C565CC4F1F06720200CCAFFE /* GTPhoneSucceedView.h */,
+				C565CC501F06720200CCAFFE /* GTPhoneSucceedView.m */,
+			);
+			path = PhoneAuth;
+			sourceTree = "<group>";
+		};
+		C565CC4B1F0670E100CCAFFE /* AlipayAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C565CC521F06721B00CCAFFE /* GTAlipaySucceedView.h */,
+				C565CC531F06721B00CCAFFE /* GTAlipaySucceedView.m */,
+				C516777B1F0CE4C9005337CD /* GTAlipaySubmitView.h */,
+				C516777C1F0CE4C9005337CD /* GTAlipaySubmitView.m */,
+			);
+			path = AlipayAuth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FBCDAA01EFCC17B001FC63B /* GoldTreasure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FBCDACE1EFCC17B001FC63B /* Build configuration list for PBXNativeTarget "GoldTreasure" */;
+			buildPhases = (
+				5E64F20C2A39AB18E4473015 /* [CP] Check Pods Manifest.lock */,
+				7FBCDA9D1EFCC17B001FC63B /* Sources */,
+				7FBCDA9E1EFCC17B001FC63B /* Frameworks */,
+				7FBCDA9F1EFCC17B001FC63B /* Resources */,
+				8D4E72D0344B02347E25C9BF /* [CP] Embed Pods Frameworks */,
+				FAD215F25A1BA4839E73EF3A /* [CP] Copy Pods Resources */,
+				0EF3C0741F161FFB00F31D85 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoldTreasure;
+			productName = GoldTreasure;
+			productReference = 7FBCDAA11EFCC17B001FC63B /* GoldTreasure.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FBCDAB91EFCC17B001FC63B /* GoldTreasureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FBCDAD11EFCC17B001FC63B /* Build configuration list for PBXNativeTarget "GoldTreasureTests" */;
+			buildPhases = (
+				41B282AE7421846410229E34 /* [CP] Check Pods Manifest.lock */,
+				7FBCDAB61EFCC17B001FC63B /* Sources */,
+				7FBCDAB71EFCC17B001FC63B /* Frameworks */,
+				7FBCDAB81EFCC17B001FC63B /* Resources */,
+				E997CC2BE4A3699FA8046E08 /* [CP] Embed Pods Frameworks */,
+				4DF749D3D7D965BB49FCA768 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FBCDABC1EFCC17B001FC63B /* PBXTargetDependency */,
+			);
+			name = GoldTreasureTests;
+			productName = GoldTreasureTests;
+			productReference = 7FBCDABA1EFCC17B001FC63B /* GoldTreasureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7FBCDAC41EFCC17B001FC63B /* GoldTreasureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FBCDAD41EFCC17B001FC63B /* Build configuration list for PBXNativeTarget "GoldTreasureUITests" */;
+			buildPhases = (
+				A5BB4C63429E974CDAD915F6 /* [CP] Check Pods Manifest.lock */,
+				7FBCDAC11EFCC17B001FC63B /* Sources */,
+				7FBCDAC21EFCC17B001FC63B /* Frameworks */,
+				7FBCDAC31EFCC17B001FC63B /* Resources */,
+				F62CDC803ED3BF8D7449412F /* [CP] Embed Pods Frameworks */,
+				5380ED55F69121CFF9F8E27C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FBCDAC71EFCC17B001FC63B /* PBXTargetDependency */,
+			);
+			name = GoldTreasureUITests;
+			productName = GoldTreasureUITests;
+			productReference = 7FBCDAC51EFCC17B001FC63B /* GoldTreasureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FBCDA991EFCC17B001FC63B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GT;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zhaofanjinrong.com;
+				TargetAttributes = {
+					7FBCDAA01EFCC17B001FC63B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = QZ274W6KU6;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					7FBCDAB91EFCC17B001FC63B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7FBCDAA01EFCC17B001FC63B;
+					};
+					7FBCDAC41EFCC17B001FC63B = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7FBCDAA01EFCC17B001FC63B;
+					};
+				};
+			};
+			buildConfigurationList = 7FBCDA9C1EFCC17B001FC63B /* Build configuration list for PBXProject "GoldTreasure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FBCDA981EFCC17B001FC63B;
+			productRefGroup = 7FBCDAA21EFCC17B001FC63B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FBCDAA01EFCC17B001FC63B /* GoldTreasure */,
+				7FBCDAB91EFCC17B001FC63B /* GoldTreasureTests */,
+				7FBCDAC41EFCC17B001FC63B /* GoldTreasureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FBCDA9F1EFCC17B001FC63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBF6BDD1F205F3100483292 /* GTUpdateView.xib in Resources */,
+				7FFEBF881F09F1A000C5ED51 /* mx_back@2x.png in Resources */,
+				7FBCDAB41EFCC17B001FC63B /* LaunchScreen.storyboard in Resources */,
+				7FFEBF8B1F09F1A000C5ED51 /* mx_refresh@2x.png in Resources */,
+				0E9D1D8F1F17979F00A68756 /* AlipaySDK.bundle in Resources */,
+				0EF3C0821F164E4400F31D85 /* transparent_bg.png in Resources */,
+				0EEA10D01F08E1F9001F56F6 /* TAuthViewController.xib in Resources */,
+				7FFEBF8A1F09F1A000C5ED51 /* mx_loading@2x.png in Resources */,
+				0EF3C0701F161A7600F31D85 /* GTNotiView.xib in Resources */,
+				7FFEBF861F09F1A000C5ED51 /* Resource.bundle in Resources */,
+				0E3F24481F14809E00F7D17B /* walletResources.bundle in Resources */,
+				0EEA10BD1F08D253001F56F6 /* TViewController.xib in Resources */,
+				BBDC65F21F0E36B600AB1B0A /* Assets.xcassets in Resources */,
+				7FFEBF891F09F1A000C5ED51 /* mx_finish@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBCDAB81EFCC17B001FC63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBCDAC31EFCC17B001FC63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF3C0741F161FFB00F31D85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#commit=`git rev-parse --short HEAD | awk '{print $1}'`\n#/usr/libexec/PlistBuddy -c \"Set CFBundleVersion ${commit}\" \"$INFOPLIST_FILE\"\ndisplayName=\"花金宝测试\"\n/usr/libexec/PlistBuddy -c \"Set CFBundleDisplayName ${displayName}\" \"$INFOPLIST_FILE\"\n";
+		};
+		41B282AE7421846410229E34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldTreasureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DF749D3D7D965BB49FCA768 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldTreasureTests/Pods-GoldTreasureTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5380ED55F69121CFF9F8E27C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldTreasureUITests/Pods-GoldTreasureUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E64F20C2A39AB18E4473015 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldTreasure-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D4E72D0344B02347E25C9BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoldTreasure/Pods-GoldTreasure-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/OpenCV/opencv2.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SafeKit/SafeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UIColor-HexString/UIColor_HexString.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/opencv2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SafeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_HexString.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldTreasure/Pods-GoldTreasure-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5BB4C63429E974CDAD915F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldTreasureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E997CC2BE4A3699FA8046E08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldTreasureTests/Pods-GoldTreasureTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F62CDC803ED3BF8D7449412F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldTreasureUITests/Pods-GoldTreasureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD215F25A1BA4839E73EF3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoldTreasure/Pods-GoldTreasure-resources.sh",
+				"${PODS_ROOT}/QIYU_iOS_SDK/SDK/QYResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldTreasure/Pods-GoldTreasure-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FBCDA9D1EFCC17B001FC63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EBFEB711F15ECAA00CEBE78 /* GTPopController.swift in Sources */,
+				BB328E9E1F03494A0021750A /* GTResModelCommon.swift in Sources */,
+				C565CC481F062C6000CCAFFE /* GTOnlineServiceViewController.m in Sources */,
+				BB328E9F1F03494A0021750A /* GTReqModelCommon.swift in Sources */,
+				BB328E9D1F03492F0021750A /* SDCollectionViewCell.m in Sources */,
+				C50EDCA41F0FB815002BBA4B /* GTAlipayAuthModel.m in Sources */,
+				C50EDC8C1F0F7621002BBA4B /* GTSystemAuth.m in Sources */,
+				BB328E9C1F0349220021750A /* GTNet.swift in Sources */,
+				7FFEBF111F04965100C5ED51 /* GTRegisterController.m in Sources */,
+				0E14641D1F0CACC80010AF99 /* GTRootTabbarVC.swift in Sources */,
+				7F0C61E31F01F1840049B8E1 /* HomePageHeadView.m in Sources */,
+				0EB53FEF1F039156001D1571 /* GTUser.swift in Sources */,
+				0E38CFC81F074C580072D323 /* UpApiUtils.m in Sources */,
+				0EFC870F1F0F8C2100EA278E /* GTDBUserModel.m in Sources */,
+				0EEC24CA1F15BE2700FA529D /* GTCheck.swift in Sources */,
+				0E3F24551F14F96E00F7D17B /* GTAdapt.m in Sources */,
+				7FFEBFA11F0E071100C5ED51 /* GTNotificationCell.m in Sources */,
+				0EB53FF71F03969C001D1571 /* GTClient.swift in Sources */,
+				C50EDC9B1F0FB7DC002BBA4B /* GTUserAuthModel.m in Sources */,
+				BFBCBB9D1F769E90004DC835 /* WDImageMaskView.m in Sources */,
+				BB328EA31F0357650021750A /* PaybackHeaderView.m in Sources */,
+				C565CC371F061E1400CCAFFE /* GTFeedBackViewController.m in Sources */,
+				0E37EFB11F029350000834C6 /* GTNetError.m in Sources */,
+				0EE42B141F012617001D7D88 /* ReturnBack.m in Sources */,
+				0E38CFCF1F074C580072D323 /* UPMutUploaderManager.m in Sources */,
+				C50EDC981F0FB4CA002BBA4B /* GTAuthenticateService.m in Sources */,
+				BBB13C9E1F0671B60066393F /* LateFeeCell.m in Sources */,
+				7FFEBF9A1F0C879500C5ED51 /* GTShowSignature.m in Sources */,
+				7FFEBF1D1F04DCDB00C5ED51 /* GTForgetPasswordCell.m in Sources */,
+				0E155E241F23513200601A2D /* GTFont.m in Sources */,
+				0E14641F1F0CAF920010AF99 /* GTRootNavVC.swift in Sources */,
+				0E4102021F343B6100EBCAA0 /* GTDefaultController.swift in Sources */,
+				7F0C61EA1F022C4E0049B8E1 /* UIButton+GTImageTitleSpacing.m in Sources */,
+				7FD97F061F1755D700880CDC /* ScrollPickerView.m in Sources */,
+				7F0C62041F0253670049B8E1 /* UIView+SDExtension.m in Sources */,
+				C53D0B131F04A86F005BFF1E /* GTIDCardAuthViewController.m in Sources */,
+				0EE42B2B1F012771001D7D88 /* UIView+Extension.m in Sources */,
+				7F55FF501F1DD465002E90A6 /* GTValuePickerView.m in Sources */,
+				C53D0B4B1F04E447005BFF1E /* GTIDCardSubmitView.m in Sources */,
+				C516777A1F0CB13F005337CD /* GTUploadAddressBookViewController.m in Sources */,
+				0EC9C8D31F28B20B00D92201 /* NSObject+GT.swift in Sources */,
+				C54CC28D1F020A2400FF3851 /* GTMineHeaderView.m in Sources */,
+				C545850B1F0351C8004C1E46 /* GTAuthCenterViewController.m in Sources */,
+				C55241801F0A489A008ADE7D /* GTUploadAddressBookView.m in Sources */,
+				0EF3C0761F16217D00F31D85 /* GTNotiController.swift in Sources */,
+				0EBF6BDF1F20649600483292 /* GTUpdateView.swift in Sources */,
+				0EEA10CF1F08E1F9001F56F6 /* TAuthViewController.swift in Sources */,
+				0E4F9BCE1F31D5CF00998212 /* UIButton+GT.swift in Sources */,
+				0EE42B101F0124DA001D7D88 /* BaseTabBarViewController.m in Sources */,
+				C54349971F0E169000072E1F /* GTLabelTextFieldView.m in Sources */,
+				0EB540071F04DD90001D1571 /* UIColor+GT.swift in Sources */,
+				0EEA10A21F08D0C4001F56F6 /* UILabel+Extension.m in Sources */,
+				BBB13CA91F07495A0066393F /* feeSummaryFooterView.m in Sources */,
+				BFBCBB9C1F769E90004DC835 /* WDImageManager.m in Sources */,
+				C565CC451F062C0200CCAFFE /* GTContactUsItemView.m in Sources */,
+				0E73E7CC1F5665AF00EE6A76 /* UILable+GT.swift in Sources */,
+				BBB13CA11F0671F70066393F /* LateFeeHeaderCell.m in Sources */,
+				0E61F12C1F271FC800D00C81 /* MBProgressHUD.m in Sources */,
+				C565CC411F0627E100CCAFFE /* GTContactUsViewController.m in Sources */,
+				0E61F1201F23540A00D00C81 /* GTCommonDefine.m in Sources */,
+				BBD3815F1F0294940098603F /* PaybackViewController.m in Sources */,
+				0EAB3C921F3C79AD0091B76E /* UINavBar+GT.swift in Sources */,
+				0E61F1241F25A4A100D00C81 /* GTStrDefine.swift in Sources */,
+				7FFEBF261F0770EC00C5ED51 /* GTContactsController.m in Sources */,
+				C53D0B461F04E447005BFF1E /* GTAuthProcessingView.m in Sources */,
+				BBB13C931F05F8730066393F /* LoanDetailViewController.m in Sources */,
+				0E38CFCD1F074C580072D323 /* NSData+MD5Digest.m in Sources */,
+				0EFC87081F0F62F600EA278E /* GTLoginRoot.swift in Sources */,
+				C53D0B521F0517E4005BFF1E /* GTLabelTextFieldTableViewCell.m in Sources */,
+				C53D0B471F04E447005BFF1E /* GTAuthSuccessInfoView.m in Sources */,
+				0EFC870A1F0F78D200EA278E /* GTNoti.swift in Sources */,
+				7F53ABC71F03560200710468 /* GTBaseViewController.m in Sources */,
+				7FBCDAA91EFCC17B001FC63B /* AppDelegate.m in Sources */,
+				BBD381531F0293920098603F /* PaybackView.m in Sources */,
+				0E5916411F18E92F00FA292C /* GTWKWebVC.swift in Sources */,
+				7FFEBFA51F0E13A800C5ED51 /* GTNotificationModel.m in Sources */,
+				BBAF95891F09D5CF0053B08A /* NowPaybackCell.m in Sources */,
+				C565CC511F06720200CCAFFE /* GTPhoneSucceedView.m in Sources */,
+				BB0FC9C01F17072400E5DD98 /* PaybackEndViewController.m in Sources */,
+				0E9D1D8B1F17737600A68756 /* GTGuiderImgVC.swift in Sources */,
+				0E057C531F0C89F0001C2F8F /* GTRefreshView.swift in Sources */,
+				7F0C61E71F01F8CC0049B8E1 /* OrderModel.m in Sources */,
+				BBB13C981F05FDE60066393F /* LoanDeatialHeadrView.m in Sources */,
+				BBD3815B1F0294860098603F /* GTLoanOrderViewController.m in Sources */,
+				BBD3814F1F0292350098603F /* TAPageControl.m in Sources */,
+				7F0C61FF1F0253670049B8E1 /* TAAnimatedDotView.m in Sources */,
+				0EAB3C951F3D3A310091B76E /* UIViewController+GT.m in Sources */,
+				0E6F4F3A1F10CEE3002E50D2 /* GTVerification.m in Sources */,
+				7FFEBF211F074A5C00C5ED51 /* GTShowMessage.m in Sources */,
+				7FFEBF2A1F0773E700C5ED51 /* GTContactsCell.m in Sources */,
+				7F0C62001F0253670049B8E1 /* TADotView.m in Sources */,
+				7FFEBFA81F0E5E8800C5ED51 /* GTNotificationNormalCell.m in Sources */,
+				C516777D1F0CE4C9005337CD /* GTAlipaySubmitView.m in Sources */,
+				7F0C61FE1F0253670049B8E1 /* TAAbstractDotView.m in Sources */,
+				7F0C61ED1F0252D50049B8E1 /* GTFlexSliderCell.m in Sources */,
+				7FFEBF9D1F0CD51100C5ED51 /* GTSubmittedSuccessfullyController.m in Sources */,
+				0EFC870C1F0F85B000EA278E /* GTDB.swift in Sources */,
+				0EB540011F03AB55001D1571 /* Int+GT.swift in Sources */,
+				BB8A920C1F1F52B300494448 /* NSDate+Custom.m in Sources */,
+				0EB53FE91F035B74001D1571 /* GTTEST.swift in Sources */,
+				0EB539821F15F8EF004D99EC /* GTNotiView.swift in Sources */,
+				C54CC2901F020AE500FF3851 /* GTMineTableViewCell.m in Sources */,
+				7F53ABD21F03823000710468 /* GTLoginView.m in Sources */,
+				C53D0B441F04E447005BFF1E /* GTAuthCenterHeaderView.m in Sources */,
+				C53D0B581F052F60005BFF1E /* GTBankCardAuthViewController.m in Sources */,
+				7FE568D11F1F4FF5006F03F6 /* GTUserAgreementController.m in Sources */,
+				0E38CFCC1F074C580072D323 /* UPMultipartBody.m in Sources */,
+				0EC9C8D11F28944A00D92201 /* GTSize.m in Sources */,
+				BBAF958F1F0A45F60053B08A /* GTTradeService.m in Sources */,
+				C53D0B5E1F052F9B005BFF1E /* GTAlipayAuthViewController.m in Sources */,
+				C565CC541F06721B00CCAFFE /* GTAlipaySucceedView.m in Sources */,
+				7FFEBF721F09E55100C5ED51 /* GTAmountController.m in Sources */,
+				C53D0B431F04E447005BFF1E /* GTAuthCenterCollectionViewCell.m in Sources */,
+				0E11483A1F027A8000B78849 /* GTApi.m in Sources */,
+				C53D0B481F04E447005BFF1E /* GTContactUsBarView.m in Sources */,
+				0E38CFC61F074C580072D323 /* UpYunBlockUpLoader.m in Sources */,
+				0E73F82A1F0CDBFF00EAEC9F /* NSObject+GT.m in Sources */,
+				BBAF95821F07A9640053B08A /* PersistLoanViewController.m in Sources */,
+				0E155E221F23511F00601A2D /* GTUIDefine.swift in Sources */,
+				BBD381571F0293A10098603F /* GTTableViewCell.m in Sources */,
+				7F53ABC01F0257AB00710468 /* GTNormalCell.m in Sources */,
+				0E38CFCA1F074C580072D323 /* UPHTTPBodyPart.m in Sources */,
+				C565CC2B1F05E6C300CCAFFE /* GTAboutUsViewController.m in Sources */,
+				0E4632891F3AC23E00625E2A /* GTTransNavbar.swift in Sources */,
+				BFBCBB9E1F769E90004DC835 /* WDTailoringController.m in Sources */,
+				0E38CFCE1F074C580072D323 /* NSString+NSHash.m in Sources */,
+				C54CC2931F0225A100FF3851 /* GTMineViewController.m in Sources */,
+				0E1FAA161F06269700D6AB40 /* Data+GT.swift in Sources */,
+				0E8695B01F0B39030064A7F5 /* NSDictionary+Extension.m in Sources */,
+				C58B126C1F1726A7003A8FC0 /* GTQiYuCustomerService.m in Sources */,
+				0EB53FEC1F037B8D001D1571 /* GTApiCode.swift in Sources */,
+				0EB540051F04DD8B001D1571 /* String+GT.swift in Sources */,
+				0EB540091F0521B1001D1571 /* GTSecUtils.swift in Sources */,
+				0E38CFCB1F074C580072D323 /* UPHTTPClient.m in Sources */,
+				BBAF958C1F0A30050053B08A /* PaybackWayCell.m in Sources */,
+				0E38CFC71F074C580072D323 /* UpYunFormUploader.m in Sources */,
+				C55241861F0A63A6008ADE7D /* GTBankCardCommitViewController.m in Sources */,
+				0EF3C0811F164E4400F31D85 /* GKCover.m in Sources */,
+				0ED6C6021F0CD302001E36B8 /* UIImage+GT.swift in Sources */,
+				7F0C62031F0253670049B8E1 /* SDCycleScrollView.m in Sources */,
+				7FFEBF911F0A2A0000C5ED51 /* GTAmountNormalCell.m in Sources */,
+				7FFEBF6F1F07976000C5ED51 /* GTContactsTitleCell.m in Sources */,
+				0EF3C0801F164E4400F31D85 /* UIView+GKExtension.m in Sources */,
+				C50EDCA11F0FB7FF002BBA4B /* GTPhoneAuthModel.m in Sources */,
+				7F53ABCA1F0356D700710468 /* GTNotificationController.m in Sources */,
+				7FFEBF8E1F0A206800C5ED51 /* GTSelectAmountCell.m in Sources */,
+				0E3F24521F14F6D300F7D17B /* GTRouter.swift in Sources */,
+				0E38CFD01F074C580072D323 /* UpYun.m in Sources */,
+				C53D0B451F04E447005BFF1E /* GTAuthFailureInfoView.m in Sources */,
+				0EE42B061F012386001D7D88 /* BaseModel.m in Sources */,
+				0EEA10B91F08D214001F56F6 /* TViewController.swift in Sources */,
+				0E73F8301F0D16C200EAEC9F /* GTHomePageController.m in Sources */,
+				0EE42B241F012746001D7D88 /* TimeTools.m in Sources */,
+				7FFEBF1A1F04DA6800C5ED51 /* GTForgetPasswordController.m in Sources */,
+				C565CC4E1F06714100CCAFFE /* GTBankCardSucceedView.m in Sources */,
+				0E451CA61F1CE9E500B026BA /* UIBarButtonItem+GT.m in Sources */,
+				0ED837F51F0738A100119191 /* GTRootUINavigationController.m in Sources */,
+				BFBCBB9B1F769E90004DC835 /* UIImage+WDCrop.m in Sources */,
+				7F53ABCE1F037AA100710468 /* GTLoginController.m in Sources */,
+				0E3F244B1F14B81500F7D17B /* GTCommonService.m in Sources */,
+				C53D0B4C1F04E447005BFF1E /* GTIDCardSucceedView.m in Sources */,
+				C53D0B491F04E447005BFF1E /* GTIDCardDisplayView.m in Sources */,
+				C53D0B5B1F052F8B005BFF1E /* GTPhoneAuthViewController.m in Sources */,
+				0E73F82D1F0CFF6600EAEC9F /* NSNumber+GT.m in Sources */,
+				BBAF95851F07A9850053B08A /* NowPaybackViewController.m in Sources */,
+				0E73F8271F0CD98A00EAEC9F /* UIImage+Extension.m in Sources */,
+				C50EDC921F0FB30D002BBA4B /* GTAuthInfoModel.m in Sources */,
+				0EE42B2A1F012771001D7D88 /* NSString+TelNumber.m in Sources */,
+				0E8B78751F0B447B007CE34B /* NSString+Additions.m in Sources */,
+				0E6F4F371F1067A5002E50D2 /* GTRealmService.m in Sources */,
+				7FBCDAA61EFCC17B001FC63B /* main.m in Sources */,
+				0E38CFC91F074C580072D323 /* UpSimpleHttpClient.m in Sources */,
+				0E8695AA1F0A2D500064A7F5 /* GTLoginService.m in Sources */,
+				0E155E211F23511F00601A2D /* GTColor.m in Sources */,
+				C565CC311F05F30E00CCAFFE /* GTUserSettingsViewController.m in Sources */,
+				7FFEBF971F0BC02400C5ED51 /* GTSignatureView.m in Sources */,
+				0EE42B171F012620001D7D88 /* RightButton.m in Sources */,
+				C50EDC9E1F0FB7F0002BBA4B /* GTBankCardAuthModel.m in Sources */,
+				0EAA25B71F0BB34600FA0ED9 /* GTHUD.swift in Sources */,
+				7FFEBF941F0B231900C5ED51 /* GTTripartiteContractController.m in Sources */,
+				BB72024B1F1500CB00BD2DA7 /* LLOrder.m in Sources */,
+				0E38CFD11F074C580072D323 /* UPYUNConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBCDAB61EFCC17B001FC63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBCDABF1EFCC17B001FC63B /* GoldTreasureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBCDAC11EFCC17B001FC63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FBCDACA1EFCC17B001FC63B /* GoldTreasureUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FBCDABC1EFCC17B001FC63B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FBCDAA01EFCC17B001FC63B /* GoldTreasure */;
+			targetProxy = 7FBCDABB1EFCC17B001FC63B /* PBXContainerItemProxy */;
+		};
+		7FBCDAC71EFCC17B001FC63B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FBCDAA01EFCC17B001FC63B /* GoldTreasure */;
+			targetProxy = 7FBCDAC61EFCC17B001FC63B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FBCDAB21EFCC17B001FC63B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FBCDAB31EFCC17B001FC63B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FBCDACC1EFCC17B001FC63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FBCDACD1EFCC17B001FC63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FBCDACF1EFCC17B001FC63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7926A36A929659707E402A95 /* Pods-GoldTreasure.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CODE_SIGN_ENTITLEMENTS = GoldTreasure/GoldTreasure.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QZ274W6KU6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/idsafeSDK",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/AliSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoldTreasure/Support Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/GoldTreasure/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/idsafeSDK",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/MoxieSDK",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/GtSdkLib-noidfa",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/LLPaySDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-force_load",
+					"$(SRCROOT)/GoldTreasure/Common/Vender/LLPaySDK/libLLPaySDK.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hua.jin.bao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoldTreasure/GoldTreasure-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		7FBCDAD01EFCC17B001FC63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5E5DB63C1C7EAA067D0D6C /* Pods-GoldTreasure.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CODE_SIGN_ENTITLEMENTS = GoldTreasure/GoldTreasure.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QZ274W6KU6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/idsafeSDK",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/AliSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoldTreasure/Support Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/GoldTreasure/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/idsafeSDK",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/MoxieSDK",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/GtSdkLib-noidfa",
+					"$(PROJECT_DIR)/GoldTreasure/Common/Vender/LLPaySDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-force_load",
+					"$(SRCROOT)/GoldTreasure/Common/Vender/LLPaySDK/libLLPaySDK.a",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hua.jin.bao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoldTreasure/GoldTreasure-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		7FBCDAD21EFCC17B001FC63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00FA4937D417AB538E225A56 /* Pods-GoldTreasureTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoldTreasureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangchao.GoldTreasureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoldTreasure.app/GoldTreasure";
+			};
+			name = Debug;
+		};
+		7FBCDAD31EFCC17B001FC63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA5D0A8345FFEB155148D0EF /* Pods-GoldTreasureTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoldTreasureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangchao.GoldTreasureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoldTreasure.app/GoldTreasure";
+			};
+			name = Release;
+		};
+		7FBCDAD51EFCC17B001FC63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C695786817498637BC7B19 /* Pods-GoldTreasureUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GoldTreasureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangchao.GoldTreasureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoldTreasure;
+			};
+			name = Debug;
+		};
+		7FBCDAD61EFCC17B001FC63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A73BC5405791685111B0863E /* Pods-GoldTreasureUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GoldTreasureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wangchao.GoldTreasureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GoldTreasure;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FBCDA9C1EFCC17B001FC63B /* Build configuration list for PBXProject "GoldTreasure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBCDACC1EFCC17B001FC63B /* Debug */,
+				7FBCDACD1EFCC17B001FC63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FBCDACE1EFCC17B001FC63B /* Build configuration list for PBXNativeTarget "GoldTreasure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBCDACF1EFCC17B001FC63B /* Debug */,
+				7FBCDAD01EFCC17B001FC63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FBCDAD11EFCC17B001FC63B /* Build configuration list for PBXNativeTarget "GoldTreasureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBCDAD21EFCC17B001FC63B /* Debug */,
+				7FBCDAD31EFCC17B001FC63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FBCDAD41EFCC17B001FC63B /* Build configuration list for PBXNativeTarget "GoldTreasureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBCDAD51EFCC17B001FC63B /* Debug */,
+				7FBCDAD61EFCC17B001FC63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FBCDA991EFCC17B001FC63B /* Project object */;
+}

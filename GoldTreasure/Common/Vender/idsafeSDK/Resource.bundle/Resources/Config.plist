@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NetMode</key>
+	<string>Release</string>
+	<key>navigationBarColor</key>
+	<string>343f51</string>
+	<key>ocrTitleString</key>
+	<string>证件扫描</string>
+	<key>livenessTitleString</key>
+	<string></string>
+	<key>ocrResultTitleString</key>
+	<string>信息核验</string>
+	<key>buttonColor</key>
+	<string>12addd</string>
+</dict>
+</plist>

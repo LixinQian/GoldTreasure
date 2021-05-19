@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  GoldTreasure
+//
+//  Created by 王超 on 2017/6/23.
+//  Copyright © 2017年 王超. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 导入 通用 头文件
+#import "NSNumber+GT.h"
+#import "UIImage+Extension.h"
+#import "NSDate+Custom.h"
+#import "GTConfDefine.h"
+#import "ReturnBack.h"
+#import "UILabel+Extension.h"
+#import "GTUIDefine.h"
+#import "GTCommonDefine.h"
+#import "ReactiveObjC.h"
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <Realm/Realm.h>
+#import "UIViewController+GT.h"
+#import "UDIDSafeDataDefine.h"
+#import "MoxieSDK.h"
+#import "GTAppMacro.h"
+#import "GoldTreasure-Swift.h"
+#import "GTSize.h"
+
+#endif /* PrefixHeader_pch */

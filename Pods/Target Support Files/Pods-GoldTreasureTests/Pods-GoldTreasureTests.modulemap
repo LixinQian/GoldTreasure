@@ -1,0 +1,6 @@
+framework module Pods_GoldTreasureTests {
+  umbrella header "Pods-GoldTreasureTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
